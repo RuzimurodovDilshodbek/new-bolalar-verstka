@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="scss/style.css">
+
+</head>
+
+<body class="bg-white">
+    <header class="header fixed-top darkMode">
+        <div class="header__wrapper ">
+            <!-- header top navbar -->
+            <div class="container header__top d-flex justify-content-between align-items-center">
+                <div class="header__top-left ">
+                    <span class="header__info-text">г.Ташкент</span>
+                    <a class="link-opacity-75-hover" href="#">info@bolalarolami</a>
+                </div>
+                <div class="header__top-right d-flex align-items-center">
+                    <div class="header__top-texts d-none d-md-flex  ">
+                        <span class="darkMode">Guvohnoma raqami: №073429</span>
+                        <span class="darkMode">Masʼul muharrir: Sherali Soliyev</span>
+                    </div>
+                    <div class="header__top-menuList d-flex align-items-center" style="gap: 16px;">
+                        <img src="./images/glasses.svg" alt="glasses icon" class="lightIcon d-block " />
+                        <img src="./images/glasses_d.svg" alt="glasses icon" class="darkIcon d-none " />
+                        <div id="themingSwitcher">
+                            <img src="./images/moon.svg" alt="moon icon" class="lightIcon d-block cur" />
+                            <img src="./images/moon_d.svg" alt="moon icon" class="darkIcon d-none " />
+                        </div>
+                        <button type="button" class="header__top-mainBtn btn d-xl-none shadow-0 darkMode-btn"
+                            data-mdb-ripple-init>Kirish</button>
+                        <select class="header__top-btn darkMode-btn d-xl-none" aria-label="Default select example">
+                            <option selected value="1">Uz</option>
+                            <option value="2">Уз</option>
+                            <option value="3">En</option>
+                            <option value="4">Ру</option>
+                        </select>
+                        <ul class="header__top-list d-none d-xl-flex align-items-center list-unstyled m-0"
+                            style="gap: 10px;">
+                            <li class="header__top-item darkMode">Uz</li>
+                            <li class="header__top-item darkMode">Уз</li>
+                            <li class="header__top-item darkMode">En</li>
+                            <li class="header__top-item darkMode">Ру</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- header bottom navbar -->
+            <nav class="header__navbar navbar navbar-expand-xl navbar-light shadow-0 darkMode">
+                <div class="container  darkMode">
+                    <!-- brand -->
+                    <a class="navbar-brand m-0" href="#">
+                        <img src="./images/logo.svg" class="lightIcon d-block" height="29" alt="bolalar olami Logo"
+                            loading="lazy" />
+                        <img src="./images/logo_d.svg" class="darkIcon d-none" height="29" alt="bolalar olami Logo"
+                            loading="lazy" />
+                    </a>
+
+                    <!-- middle -->
+                    <div class="darkMode navbar-collapse header__navbar-middle collapse" id="navbarTogglerDemo02">
+
+                        <!-- navbar list -->
+                        <ul class="darkMode navbar-nav d-none d-xl-flex justify-content-center w-100">
+                            <li class="nav-item position-relative darkMode">
+                                <a class="nav-link" href="#">Bosh sahifa</a>
+                                <div class="darkMode d-none item-menu list-group list-group-light position-absolute">
+                                    <button type="button" class="list-group-item list-group-item-action  border-0 ">
+                                        Maktabgacha ta'lim
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action border-0">
+                                        O’rta maxsus ta’lim
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action border-0">
+                                        Oliy ta’lim
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action border-0">
+                                        Xususiy ta’lim
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Yangiliklar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Ta'lim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Salomatlik</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Huquqiy klinika</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Achchiqtosh</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Media</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Foydali</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kutubxona</a>
+                            </li>
+                        </ul>
+
+                        <!-- accordion -->
+                        <div class="darkMode accordion container my-3 d-flex flex-column d-xl-none left-0 "
+                            style="gap: 12px;" id="accordionExample">
+                            <div class="accordion-item darkMode-btn">
+                                <h2 class="accordion-header" id="1">
+                                    <button data-mdb-collapse-init class="darkMode rounded-3 accordion-button shadow-0 "
+                                        type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Yangiliklar
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse border-0" aria-labelledby="1"
+                                    data-mdb-parent="#accordionExample">
+                                    <ul class="accordion-body list-unstyled">
+                                        <li>Maktabgacha ta'lim</li>
+                                        <li>O’rta maxsus ta’lim</li>
+                                        <li>Oliy ta’lim</li>
+                                        <li>Xususiy ta’lim</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item darkMode-btn">
+                                <h2 class="accordion-header" id="1">
+                                    <button data-mdb-collapse-init class="darkMode rounded-3 accordion-button shadow-0 "
+                                        type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseOne1"
+                                        aria-expanded="true" aria-controls="collapseOne1">
+                                        Ta'lim
+                                    </button>
+                                </h2>
+                                <div id="collapseOne1" class="accordion-collapse collapse border-0" aria-labelledby="1"
+                                    data-mdb-parent="#accordionExample">
+                                    <ul class="accordion-body list-unstyled">
+                                        <li>Maktabgacha ta'lim</li>
+                                        <li>O’rta maxsus ta’lim</li>
+                                        <li>Oliy ta’lim</li>
+                                        <li>Xususiy ta’lim</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- right -->
+                    <div class="header__navbar-right d-flex align-items-center darkMode">
+                        <button type="button" class="darkMode-btn btn shadow-0 header__navbar-btn" data-mdb-ripple-init>
+                            <img src="./images/search.svg" class="lightIcon d-block" alt="search icon">
+                            <img src="./images/search_d.svg" class="darkIcon d-none" alt="search icon">
+                        </button>
+                        <button data-mdb-collapse-init
+                            class="darkMode-btn navbar-toggler header__navbar-btn d-xl-none collapsed" type="button"
+                            data-mdb-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <img src="./images/x.svg" alt="x icon" class="">
+                            <img src="./images/menu.svg" alt="menu icon" class="d-none">
+                        </button>
+                        <!-- Avatar -->
+                        <div class="dropdown">
+                            <a data-mdb-dropdown-init class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                                href="#" id="navbarDropdownMenuAvatar" role="button" aria-expanded="false">
+                                <img src="images/person.png" class="rounded-circle" height="35" alt="person"
+                                    loading="lazy" />
+                            </a>
+
+                            <!-- width uzi 182px  -->
+                            <ul class="dropdown-menu dropdown-menu-end" style="width: 192px;"
+                                aria-labelledby="navbarDropdownMenuAvatar">
+                                <li class="d-flex align-items-start" style="gap: 8px; padding: 10px 10px 4px 10px;">
+                                    <img src="images/person.png" class="rounded-circle" height="35" alt="person"
+                                        loading="lazy" />
+
+                                    <div>
+                                        <h4 class="m-0" style="font-size: 14px;  line-height: 20px;">Firdavs Muzaffarov
+                                        </h4>
+                                        <span style="color: rgba(36, 36, 36, 0.50); font-size: 11px; line-height: 20px;"
+                                            class="darkMode-sp">info@gmail.com</span>
+                                    </div>
+                                </li>
+                                <li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Akaunt sozlamalari</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Qorong'i rejim</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Yordam</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Chiqish</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- OUR GALLERY -->
+        <section class="container">
+            <div style="margin-top:135px;">
+                <h2 class="mediacate__text">
+                    BIZNING GALEREYA
+                </h2>
+                <div class="mediacate__card">
+                    <div class="mediacate__card-box position-relative">
+                        <img src="./mediacategoryImages/mediaimg1.png" class="img-fluid mediacate__card-img"
+                            alt="GALEREYA img">
+                        <div class="mediacate__card-posi position-absolute w-100">
+                            <div>
+                                <h3 class="mediacate__card-posi--title fw-medium text-white">
+                                    Ijtimoiy so'rovnoma
+                                </h3>
+                                <h3 class="mediacate__card-posi--title fw-normal">
+                                    5 Videos
+                                </h3>
+                            </div>
+                            <img src="./mediacategoryImages/play-icon.svg" class="img-fluid" alt="play-icon">
+                        </div>
+                    </div>
+                    <div class="mediacate__card-box1">
+                        <div class="position-relative">
+                            <img src="./mediacategoryImages/mediaimg2.png" class="img-fluid rounded-0 mediacate__card-box1--img "
+                                alt="GALEREYA img">
+                                <h2 class="mediacate__card-bottom--title position-absolute">
+                                    Barcha pleylistlar
+                                </h2>
+                                <div class="mediacate__card-bottom position-absolute w-100">
+                                    <div>
+                                        <p class="mediacate__card-bottom--text">
+                                            Ijtimoiy so'rovnoma
+                                        </p>
+                                        <p class="mediacate__card-bottom--text1 fw-normal">
+                                            32 Videos 
+                                        </p>
+                                    </div>
+                                    <img src="./mediacategoryImages/play-icon.svg" class="img-fluid" style="width: 40px; height: 40px;" alt="play-icon">
+                                </div>
+
+                        </div>
+                        <div class="position-relative">
+                            <img src="./mediacategoryImages/mediaimg3.png" class="img-fluid rounded-0 mediacate__card-box1--img"
+                                alt="GALEREYA img">
+                                <h2  class="mediacate__card-bottom--title position-absolute">
+                                    Barcha fotosuratlar
+                                </h2>
+                                <div class="mediacate__card-bottom position-absolute w-100">
+                                    <div>
+                                        <p class="mediacate__card-bottom--text">
+                                            Hamma rasmlar
+                                        </p>
+                                        <p class="mediacate__card-bottom--text1 fw-normal">
+                                            65 rasmlar  
+                                        </p>
+                                    </div>
+                                    <div class="mediacate__card-bottom--imgdiv">
+                                    <img src="./mediacategoryImages/gallery-icon.svg" class="img-fluid mediacate__card-bottom--img" alt="play-icon">
+                                    </div>
+                                </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mediacate__galle">
+                    <div class="position-relative">
+                        <img src="./mediacategoryImages/imggalleriya.png" class="img-fluid" alt="gallery-img">
+                        <img src="./mediacategoryImages/group-icon.svg" class="position-absolute mediacate__galle--icon" alt="icon">
+                    </div>
+                    <div class="position-relative">
+                        <img src="./mediacategoryImages/imggalleriya1.png" class="img-fluid" alt="gallery-img">
+                        <img src="./mediacategoryImages/group-icon.svg" class="position-absolute mediacate__galle--icon" alt="icon">
+                    </div>
+                    <div class="position-relative">
+                        <img src="./mediacategoryImages/imggalleriya2.png" class="img-fluid" alt="gallery-img">
+                        <img src="./mediacategoryImages/group-icon.svg" class="position-absolute mediacate__galle--icon" alt="icon">
+                    </div>
+                    <div class="position-relative">
+                        <img src="./mediacategoryImages/imggalleriya4.png" class="img-fluid" alt="gallery-img">
+                        <img src="./mediacategoryImages/group-icon.svg" class="position-absolute mediacate__galle--icon" alt="icon">
+                    </div>
+                    <div class="position-relative">
+                        <img src="./mediacategoryImages/imggalleriya6.png" class="img-fluid" alt="gallery-img">
+                        <img src="./mediacategoryImages/group-icon.svg" class="position-absolute mediacate__galle--icon" alt="icon">
+                    </div>
+                    <div class="position-relative">
+                        <img src="./mediacategoryImages/imggalleriya5.png" class="img-fluid" alt="gallery-img">
+                        <img src="./mediacategoryImages/group-icon.svg" class="position-absolute mediacate__galle--icon" alt="icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- media all -->
+        <section class="container">
+            <h2 class="mediacate__all-text">
+                Hammasi
+            </h2>
+            <div class="mediacate__all">
+                <div class="position-relative mediacate__all-card w-100 image-container ">
+                    <img src="./mediacategoryImages/all-img.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
+                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
+                        <div>
+                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
+                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
+                        </div>
+                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
+                    </div>
+                </div>
+                <div class="position-relative mediacate__all-card w-100 image-container ">
+                    <img src="./mediacategoryImages/all-img1.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
+                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
+                        <div>
+                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
+                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
+                        </div>
+                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
+                    </div>
+                </div>
+                <div class="position-relative mediacate__all-card w-100 image-container ">
+                    <img src="./mediacategoryImages/all-img1.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
+                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
+                        <div>
+                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
+                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
+                        </div>
+                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
+                    </div>
+                </div>
+                <div class="position-relative mediacate__all-card w-100 image-container ">
+                    <img src="./mediacategoryImages/all-img1.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
+                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
+                        <div>
+                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
+                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
+                        </div>
+                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
+                    </div>
+                </div>
+                <div class="position-relative mediacate__all-card w-100 image-container ">
+                    <img src="./mediacategoryImages/all-img2.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
+                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
+                        <div>
+                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
+                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
+                        </div>
+                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
+                    </div>
+                </div>
+                <div class="position-relative mediacate__all-card w-100 image-container ">
+                    <img src="./mediacategoryImages/all-img3.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
+                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
+                        <div>
+                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
+                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
+                        </div>
+                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <h2 class="mediacate__all-text">
+                Hammasi
+            </h2>
+            <div class="mediacate__all">
+                <div class="position-relative mediacate__all-card w-100 image-container ">
+                    <img src="./mediacategoryImages/all-img4.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
+                    <div class="position-absolute mediacate__all-box w-100 h-100 card-img-overlay">
+                        <div>
+                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
+                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
+                        </div>
+                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
+                    </div>
+                </div>
+                <div class="position-relative mediacate__all-card w-100 image-container ">
+                    <img src="./mediacategoryImages/all-img5.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
+                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
+                        <div>
+                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
+                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
+                        </div>
+                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
+                    </div>
+                </div>
+                <div class="position-relative mediacate__all-card w-100 image-container ">
+                    <img src="./mediacategoryImages/all-img6.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
+                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
+                        <div>
+                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
+                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
+                        </div>
+                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
+                    </div>
+                </div>
+                <div class="position-relative mediacate__all-card w-100 image-container ">
+                    <img src="./mediacategoryImages/all-img7.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
+                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
+                        <div>
+                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
+                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
+                        </div>
+                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+
+        <section class="dunyo-img-card bg-white darkMode" >
+            
+            <div class="dunyo-img-box d-flex justify-content-between gap-5 overflow-y-auto darkMode">
+                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
+                ;" />
+                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
+                ;" />
+                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
+                ;" />
+                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
+                ;" />
+                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
+                ;" />
+                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
+                ;" />
+                 
+        </div>
+        <!-- <div>
+                <div class="row d-flex align-items-center justify-content-between">
+                    
+                    <div id="carouselExampleSlidesOnly"
+                        class="carousel slide position-static"
+                        data-mdb-ride="carousel" data-mdb-carousel-init>
+                        <div class=" carousel-inner">
+                            <div class=" carousel-item  active h-100">
+                                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
+                ;" />
+                            </div>
+                            <div class=" carousel-item  active h-100">
+                                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
+                ;" />
+                            </div>
+                            <div class=" carousel-item  active h-100">
+                                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
+                ;" />
+                            </div>
+                            <div class=" carousel-item  active h-100">
+                                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
+                ;" />
+                            </div>
+                            <div class=" carousel-item  active h-100">
+                                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
+                ;" />
+                            </div>
+                            <div class=" carousel-item  active h-100">
+                                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
+                ;" />
+                            </div>
+                        </div>
+                    </div>
+
+                
+            </div>
+        </div> -->
+    </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="darkMode bg-white" style="margin-top: 30px;">
+        <div class="footer container">
+            <div class="footer__card row">
+                <div class="col">
+                    <a href="#">
+                        <img src="./images/footer-logo.svg" class="lightIcon d-block img-fluid" alt="bolalar olami Logo"
+                            loading="lazy" />
+                        <img src="./images/logo_d.svg" class="darkIcon d-none img-fluid" alt="bolalar olami Logo"
+                            loading="lazy" />
+                    </a>
+                    <p class="footer__text text-body-secondary fw-normal">
+                        Bolalarolami.Uz Internet Nashri 2023 Yilning 7 Aprelda Elektron OAV Sifatida O'zbekiston
+                        Respublikasi Prezidenti Administratsiyasi Huzuridagi Axborot Va Ommaviy Kommunikatsiyalar
+                        Agentligi Tomonidan Davlat Ro‘yxatidan O‘tkazilgan.
+                    </p>
+                    <div class="d-flex" style="margin-top: 50px; gap: 22px;">
+                        <a href="#"> <img src="./images/instagram-logo.svg" alt="instagram-logo"></a>
+                        <a href="#"><img src="./images/telegram-logo.svg" alt="telegram-logo"> </a>
+                        <a href="#"> <img src="./images/facebook-logo.svg" alt="facebook-logo"></a>
+                        <a href="#"> <img src="./images/youtube-logo.svg" alt="youtube-logo"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <ul class="footer__list list-unstyled d-flex flex-column" style="gap: 24px;">
+                        <li>
+                            <a class="footer__link text-decoration-none fw-bold darkMode-title" href="#">Biz
+                                haqimizda</a>
+                        </li>
+                        <li>
+                            <a class="footer__link1 fw-bold darkMode-title" href="#">Guvohnoma raqami: <span
+                                    class="fw-normal">
+                                    №073429</span></a>
+                        </li>
+                        <li>
+                            <a class="footer__link1 fw-bold darkMode-title" href="#">Muassis: <span
+                                    class="fw-normal">"Dunyo – bolalar
+                                    uchun" <br> masʼuliyati cheklangan jamiyati.</span></a>
+                        </li>
+                        <li>
+                            <a class="footer__link1 fw-bold darkMode-title" href="#">Masʼul muharrir: <span
+                                    class="fw-normal">Sherali
+                                    Soliyev</span>.</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-unstyled d-flex flex-column" style="gap: 24px;">
+                        <li>
+                            <a class="footer__link text-decoration-none fw-bold darkMode-title" href="#">Kontaktlar</a>
+                        </li>
+                        <li class="d-flex align-items-center" style="gap: 6px;">
+                            <img src="./images/mail-icon.svg" style="margin-bottom: 3px;" alt="mail-icon"
+                                class="lightIcon d-block" />
+                            <img src="./images/email-dark.svg" style="margin-bottom: 3px;" alt="email-dark icon"
+                                class="darkIcon d-none" />
+                            <a class="footer__link1 fw-normal darkMode-title" href="#"> bolalarolamiuz@gmail.com</a>
+                        </li>
+                        <li class="d-flex" style="gap: 14px;">
+                            <img src="./images/phone-icon.svg" alt="phone-icon" class="lightIcon d-block" />
+                            <img src="./images/tell-dark.svg" alt="tell-dark icon" class="darkIcon d-none" />
+                            <a class="footer__link1 fw-normal darkMode-title" href="#">998 (90) 109 24 35</a>
+                        </li>
+                        <li class="d-flex align-items-start" style="gap: 6px;">
+                            <img src="./images/location-icon.svg" alt="location-icon" class="lightIcon d-block " />
+                            <img src="./images/gps-dark.svg" alt="gps-dark icon" class="darkIcon d-none " />
+                            <a class="footer__link1 fw-normal darkMode-title" href="#">634034, Toshkent sh., Naximovna
+                                <br> ko‘chasi,
+                                8/2</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-unstyled d-flex flex-column" style="gap: 24px;">
+                        <li>
+                            <a class="footer__link text-decoration-none fw-bold darkMode-title" href="#">Hamkorlik
+                                uchun</a>
+                        </li>
+                        <li class="d-flex" style="gap: 14px;">
+                            <img src="./images/phone-icon.svg" alt="phone-icon" class="lightIcon d-block " />
+                            <img src="./images/tell-dark.svg" alt="tell-dark icon" class="darkIcon d-none " />
+                            <a class="footer__link1 fw-normal darkMode-title" href="#">998 (90) 109 24 35</a>
+                        </li>
+                        <li class="d-flex" style="gap: 13px;">
+                            <img src="./images/telegram-icon.svg" alt="telegram-icon" class="lightIcon d-block " />
+                            <img src="./images/telegram-dark.svg" alt="telegram-dark icon" class="darkIcon d-none " />
+                            <a class="footer__link1 fw-normal darkMode-title" href="#">Telegram</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <p class="footer__co-text text-center fw-normal darkMode-sp">
+                    © 2022-2023 Bolalar Olami. Barcha huquqlar himoyalangan.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- MDB -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

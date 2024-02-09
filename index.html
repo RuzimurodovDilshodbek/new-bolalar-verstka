@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en" data-mdb-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title> Bolalar olami</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- carusel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="scss/style.css">
+
+
+</head>
+
+
+<body class="darkMode-body bg-light">
+    <header class="header fixed-top darkMode">
+        <div class="header__wrapper ">
+            <!-- header top navbar -->
+            <div class="container header__top d-flex justify-content-between align-items-center">
+                <div class="header__top-left ">
+                    <span class="header__info-text">г.Ташкент</span>
+                    <a class="link-opacity-75-hover" href="#">info@bolalarolami</a>
+                </div>
+                <div class="header__top-right d-flex align-items-center">
+                    <div class="header__top-texts d-none d-md-flex  ">
+                        <span class="darkMode">Guvohnoma raqami: №073429</span>
+                        <span class="darkMode">Masʼul muharrir: Sherali Soliyev</span>
+                    </div>
+                    <div class="header__top-menuList d-flex align-items-center" style="gap: 16px;">
+                        <img src="./images/glasses.svg" alt="glasses icon" class="lightIcon d-block " />
+                        <img src="./images/glasses_d.svg" alt="glasses icon" class="darkIcon d-none " />
+                        <div id="themingSwitcher">
+                            <img src="./images/moon.svg" alt="moon icon" class="lightIcon d-block cur" />
+                            <img src="./images/moon_d.svg" alt="moon icon" class="darkIcon d-none " />
+                        </div>
+                        <button type="button" class="header__top-mainBtn btn d-xl-none shadow-0 darkMode-btn"
+                            data-mdb-ripple-init>Kirish</button>
+                        <select class="header__top-btn darkMode-btn d-xl-none" aria-label="Default select example">
+                            <option selected value="1">Uz</option>
+                            <option value="2">Уз</option>
+                            <option value="3">En</option>
+                            <option value="4">Ру</option>
+                        </select>
+                        <ul class="header__top-list d-none d-xl-flex align-items-center list-unstyled m-0"
+                            style="gap: 10px;">
+                            <li class="header__top-item darkMode">Uz</li>
+                            <li class="header__top-item darkMode">Уз</li>
+                            <li class="header__top-item darkMode">En</li>
+                            <li class="header__top-item darkMode">Ру</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- header bottom navbar -->
+            <nav class="header__navbar navbar navbar-expand-xl navbar-light shadow-0 darkMode">
+                <div class="container  darkMode">
+                    <!-- brand -->
+                    <a class="navbar-brand m-0" href="#">
+                        <img src="./images/logo.svg" class="lightIcon d-block" height="29" alt="bolalar olami Logo"
+                            loading="lazy" />
+                        <img src="./images/logo_d.svg" class="darkIcon d-none" height="29" alt="bolalar olami Logo"
+                            loading="lazy" />
+                    </a>
+
+                    <!-- middle -->
+                    <div class="darkMode navbar-collapse header__navbar-middle collapse" id="navbarTogglerDemo02">
+
+                        <!-- navbar list -->
+                        <ul class="darkMode navbar-nav d-none d-xl-flex justify-content-center w-100">
+                            <li class="nav-item position-relative darkMode">
+                                <a class="nav-link" href="#">Bosh sahifa</a>
+                                <div class="darkMode d-none item-menu list-group list-group-light position-absolute">
+                                    <button type="button" class="list-group-item list-group-item-action  border-0 ">
+                                        Maktabgacha ta'lim
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action border-0">
+                                        O’rta maxsus ta’lim
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action border-0">
+                                        Oliy ta’lim
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action border-0">
+                                        Xususiy ta’lim
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Yangiliklar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Ta'lim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Salomatlik</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Huquqiy klinika</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Achchiqtosh</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Media</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Foydali</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kutubxona</a>
+                            </li>
+                        </ul>
+
+                        <!-- accordion -->
+                        <div class="darkMode accordion container my-3 d-flex flex-column d-xl-none left-0 "
+                            style="gap: 12px;" id="accordionExample">
+                            <div class="accordion-item darkMode-btn">
+                                <h2 class="accordion-header" id="1">
+                                    <button data-mdb-collapse-init class="darkMode rounded-3 accordion-button shadow-0 "
+                                        type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Yangiliklar
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse border-0" aria-labelledby="1"
+                                    data-mdb-parent="#accordionExample">
+                                    <ul class="accordion-body list-unstyled">
+                                        <li>Maktabgacha ta'lim</li>
+                                        <li>O’rta maxsus ta’lim</li>
+                                        <li>Oliy ta’lim</li>
+                                        <li>Xususiy ta’lim</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item darkMode-btn">
+                                <h2 class="accordion-header" id="1">
+                                    <button data-mdb-collapse-init class="darkMode rounded-3 accordion-button shadow-0 "
+                                        type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseOne1"
+                                        aria-expanded="true" aria-controls="collapseOne1">
+                                        Ta'lim
+                                    </button>
+                                </h2>
+                                <div id="collapseOne1" class="accordion-collapse collapse border-0" aria-labelledby="1"
+                                    data-mdb-parent="#accordionExample">
+                                    <ul class="accordion-body list-unstyled">
+                                        <li>Maktabgacha ta'lim</li>
+                                        <li>O’rta maxsus ta’lim</li>
+                                        <li>Oliy ta’lim</li>
+                                        <li>Xususiy ta’lim</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- right -->
+                    <div class="header__navbar-right d-flex align-items-center darkMode">
+                        <button type="button" class="darkMode-btn btn shadow-0 header__navbar-btn" data-mdb-ripple-init>
+                            <img src="./images/search.svg" class="lightIcon d-block" alt="search icon">
+                            <img src="./images/search_d.svg" class="darkIcon d-none" alt="search icon">
+                        </button>
+                        <button data-mdb-collapse-init
+                            class="darkMode-btn navbar-toggler header__navbar-btn d-xl-none collapsed" type="button"
+                            data-mdb-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <img src="./images/x.svg" alt="x icon" class="">
+                            <img src="./images/menu.svg" alt="menu icon" class="d-none">
+                        </button>
+                        <!-- Avatar -->
+                        <div class="dropdown">
+                            <a data-mdb-dropdown-init class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                                href="#" id="navbarDropdownMenuAvatar" role="button" aria-expanded="false">
+                                <img src="images/person.png" class="rounded-circle" height="35" alt="person"
+                                    loading="lazy" />
+                            </a>
+
+                            <!-- width uzi 182px  -->
+                            <ul class="dropdown-menu dropdown-menu-end" style="width: 192px;"
+                                aria-labelledby="navbarDropdownMenuAvatar">
+                                <li class="d-flex align-items-start" style="gap: 8px; padding: 10px 10px 4px 10px;">
+                                    <img src="images/person.png" class="rounded-circle" height="35" alt="person"
+                                        loading="lazy" />
+
+                                    <div>
+                                        <h4 class="m-0" style="font-size: 14px;  line-height: 20px;">Firdavs Muzaffarov
+                                        </h4>
+                                        <span style="color: rgba(36, 36, 36, 0.50); font-size: 11px; line-height: 20px;"
+                                            class="darkMode-sp">info@gmail.com</span>
+                                    </div>
+                                </li>
+                                <li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Akaunt sozlamalari</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Qorong'i rejim</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Yordam</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Chiqish</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <!-- Carousel wrapper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/hero_img.jpg" class="img-fluid h-100 w-100 " style="object-fit: cover;"
+                                alt="hero image" />
+                            <div class="carousel-caption ">
+                                <div class="hero__pages d-flex align-items-center">
+                                    <i class="fas fa-angle-left "></i>
+                                    <span class=" hero__infoTy">3</span>
+                                    <i class="fas fa-angle-right "></i>
+                                    <span class="opacity-75 hero__infoTy-oth">12</span>
+                                </div>
+                                <div
+                                    class="d-flex flex-column align-items-start flex-sm-row align-items-sm-end justify-content-sm-between">
+                                    <h3 class="text-start hero__car-text">Yaponiyada tug‘ilishlar soni kamaydi</h3>
+                                    <a class="btn text-white hero__link-btn d-flex align-items-center darkMode2"
+                                        data-mdb-ripple-init href="#!" role="button">
+                                        Подробнее
+                                        <i class="fas fa-angle-right fa-sm mb-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp"
+                                class="img-fluid h-100 w-100 " alt="Sunset Over the City" />
+                            <div class="carousel-caption ">
+                                <div class="hero__pages d-flex align-items-center">
+                                    <i class="fas fa-angle-left "></i>
+                                    <span class=" hero__infoTy">3</span>
+                                    <i class="fas fa-angle-right "></i>
+                                    <span class="opacity-75 hero__infoTy-oth">12</span>
+                                </div>
+                                <div
+                                    class="d-flex flex-column align-items-start flex-sm-row align-items-sm-end justify-content-sm-between">
+                                    <h3 class="text-start hero__car-text">Yaponiyada tug‘ilishlar soni keskin kamaydi
+                                    </h3>
+                                    <a class="btn text-white hero__link-btn d-flex align-items-center darkMode2"
+                                        data-mdb-ripple-init href="#!" role="button"> Подробнее <i
+                                            class="fas fa-angle-right fa-sm mb-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp"
+                                class="img-fluid h-100 w-100 " alt="Sunset Over the City" />
+                            <div class="carousel-caption ">
+                                <div class="hero__pages d-flex align-items-center">
+                                    <i class="fas fa-angle-left "></i>
+                                    <span class=" hero__infoTy">3</span>
+                                    <i class="fas fa-angle-right "></i>
+                                    <span class="opacity-75 hero__infoTy-oth">12</span>
+                                </div>
+                                <div
+                                    class="d-flex flex-column align-items-start flex-sm-row align-items-sm-end justify-content-sm-between">
+                                    <h3 class="text-start hero__car-text">Yaponiyada tug‘ilishlar soni keskin
+                                        kamaydi
+                                    </h3>
+                                    <a class="btn text-white hero__link-btn d-flex align-items-center darkMode2"
+                                        data-mdb-ripple-init href="#!" role="button">
+                                        Подробнее
+                                        <i class="fas fa-angle-right fa-sm mb-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp"
+                                class="img-fluid h-100 w-100 " alt="Sunset Over the City" />
+                            <div class="carousel-caption ">
+                                <div class="hero__pages d-flex align-items-center">
+                                    <i class="fas fa-angle-left "></i>
+                                    <span class=" hero__infoTy">3</span>
+                                    <i class="fas fa-angle-right "></i>
+                                    <span class="opacity-75 hero__infoTy-oth">12</span>
+                                </div>
+                                <div
+                                    class="d-flex flex-column align-items-start flex-sm-row align-items-sm-end justify-content-sm-between">
+                                    <h3 class="text-start hero__car-text">Yaponiyada tug‘ilishlar soni keskin
+                                        kamaydi
+                                    </h3>
+                                    <a class="btn text-white hero__link-btn d-flex align-items-center darkMode2"
+                                        data-mdb-ripple-init href="#!" role="button">
+                                        Подробнее
+                                        <i class="fas fa-angle-right fa-sm mb-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoplay-progress">
+                        <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="14"></circle>
+                        </svg>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+        <section class="news ">
+            <div class="container">
+                <h4 class="news__title darkMode-title">Yangiliklar</h4>
+                <div class="news__wrapper">
+                    <div class="news__left card bg-dark text-white news__cards  image-container w-100">
+                        <img src="images/news1.jpg" class="card-img img-fluid h-100 rounded-0 " alt="Stony Beach" />
+                        <div class="card-img-overlay rounded-0 ">
+                            <h5 class="news__card-title">Mirziyoyeva oilasi bolalar
+                                kutubxonasiga bordi.</h5>
+                        </div>
+                    </div>
+                    <div class=" news__right">
+                        <div class="card bg-dark text-white news__cards image-container w-100 ">
+                            <img src="images/news2.jpg" class="card-img img-fluid h-100 rounded-0" alt="Stony Beach" />
+                            <div class="card-img-overlay rounded-0">
+                                <h5 class="news__card-title">Yaponiyada tug‘ilishlar soni keskin kamaydi</h5>
+                            </div>
+                        </div>
+                        <div class="card bg-dark text-white news__cards image-container w-100 ">
+                            <img src="images/news2.jpg" class="card-img img-fluid h-100 rounded-0" alt="Stony Beach" />
+                            <div class="card-img-overlay rounded-0">
+                                <h5 class="news__card-title">Yaponiyada tug‘ilishlar soni keskin kamaydi</h5>
+                            </div>
+                        </div>
+                        <div class="card bg-dark text-white news__cards image-container w-100 ">
+                            <img src="images/news2.jpg" class="card-img img-fluid h-100 rounded-0" alt="Stony Beach" />
+                            <div class="card-img-overlay rounded-0">
+                                <h5 class="news__card-title">Yaponiyada tug‘ilishlar soni keskin kamaydi</h5>
+                            </div>
+                        </div>
+                        <div class="card bg-dark text-white news__cards image-container w-100 ">
+                            <img src="images/news2.jpg" class="card-img img-fluid h-100 rounded-0" alt="Stony Beach" />
+                            <div class="card-img-overlay rounded-0">
+                                <h5 class="news__card-title">Yaponiyada tug‘ilishlar soni keskin kamaydi</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lastNews">
+            <div class="container">
+                <div class="lastNews__wrapper ">
+                    <div class="lastNews__left">
+                        <div class="lastNews__left-inner card h-100 shadow-0 rounded-0 darkMode">
+                            <div class="position-relative">
+                                <img src="images/lastNew1.jpg" class="card-img-top rounded-0"
+                                    alt="Hollywood Sign on The Hill" />
+                                <span class="position-absolute lastNews__left-spLink darkMode">Salomatlik</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title darkMode">Mirziyoyeva oilasi bolalar kutubga bordi.
+                                </h5>
+                                <p class="card-text darkMode">
+                                    Prezident yordamchisi Saida Mirziyoyeva farzandlari bilan bolalar
+                                    kutubxonasiga keldi.....
+                                </p>
+                                <span class="lastNews__left-sp darkMode-sp">12.12.2023 12:32</span>
+                            </div>
+                        </div>
+                        <div class="lastNews__left-inner card h-100 shadow-0 rounded-0 darkMode">
+                            <div class="position-relative">
+                                <img src="images/lastNew2.jpg" class="card-img-top rounded-0"
+                                    alt="Hollywood Sign on The Hill" />
+                                <span class="position-absolute lastNews__left-spLink darkMode">Salomatlik</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title darkMode">Mirziyoyeva oilasi bolalar kutubga bordi.
+                                </h5>
+                                <p class="card-text darkMode">
+                                    Prezident yordamchisi Saida Mirziyoyeva farzandlari bilan bolalar
+                                    kutubxonasiga keldi.....
+                                </p>
+                                <span class="lastNews__left-sp darkMode-sp">12.12.2023 12:32</span>
+                            </div>
+                        </div>
+                        <div class="lastNews__left-inner card h-100 shadow-0 rounded-0 darkMode">
+                            <div class="position-relative">
+                                <img src="images/lastNew3.jpg" class="card-img-top rounded-0"
+                                    alt="Hollywood Sign on The Hill" />
+                                <span class="position-absolute lastNews__left-spLink darkMode">Salomatlik</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title darkMode">Mirziyoyeva oilasi bolalar kutubga bordi.
+                                </h5>
+                                <p class="card-text darkMode">
+                                    Prezident yordamchisi Saida Mirziyoyeva farzandlari bilan bolalar
+                                    kutubxonasiga keldi.....
+                                </p>
+                                <span class="lastNews__left-sp darkMode-sp">12.12.2023 12:32</span>
+                            </div>
+                        </div>
+
+
+                        <div class="lastNews__left-inner card h-100 shadow-0 rounded-0 darkMode">
+                            <div class="position-relative">
+                                <img src="images/lastNew4.jpg" class="card-img-top rounded-0"
+                                    alt="Hollywood Sign on The Hill" />
+                                <span class="position-absolute lastNews__left-spLink darkMode">Salomatlik</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title darkMode">Mirziyoyeva oilasi bolalar kutubga bordi.
+                                </h5>
+                                <p class="card-text darkMode">
+                                    Prezident yordamchisi Saida Mirziyoyeva farzandlari bilan bolalar
+                                    kutubxonasiga keldi.....
+                                </p>
+                                <span class="lastNews__left-sp darkMode-sp">12.12.2023 12:32</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="lastNews__right darkMode border-0">
+                        <h4 class="lastNews__right-title ">So'nggi yangiliklarga</h4>
+                        <ul class="lastNews__right-list list-unstyled darkMode">
+                            <li class="border-bottom">
+                                <p class="lastNews__right-text darkMode">Ertaga O‘zbekistonning qaysi hududlarida
+                                    qor
+                                    yog‘ishi ma’lum qilindi</p>
+                                <div
+                                    class=" lastNews__right-view d-flex justify-content-between align-items-center  darkMode-sp">
+                                    <div class="d-flex align-items-center" style="gap: 7px;">
+                                        <img src="./images/eye.svg" alt="eye icon">
+                                        <span class="lastNews__right-sp darkMode-sp">80934</span>
+                                    </div>
+                                    <span
+                                        class="lastNews__right-sp lastNews__right-spDate darkMode-sp">12.12.2023</span>
+                                </div>
+                            </li>
+                            <li class="border-bottom">
+                                <p class="lastNews__right-text darkMode">Ertaga O‘zbekistonning qaysi hududlarida qor
+                                    yog‘ishi ma’lum qilindi</p>
+                                <div
+                                    class="lastNews__right-view d-flex justify-content-between align-items-center darkMode-sp">
+                                    <div class="d-flex align-items-center" style="gap: 7px;">
+                                        <img src="./images/eye.svg" alt="eye icon">
+                                        <span class="lastNews__right-sp darkMode-sp">80934</span>
+                                    </div>
+                                    <span
+                                        class="lastNews__right-sp lastNews__right-spDate darkMode-sp">12.12.2023</span>
+                                </div>
+                            </li>
+                            <li class="border-bottom">
+                                <p class="lastNews__right-text darkMode">Ertaga O‘zbekistonning qaysi hududlarida
+                                    qor
+                                    yog‘ishi ma’lum qilindi</p>
+                                <div
+                                    class=" lastNews__right-view d-flex justify-content-between align-items-center  darkMode-sp">
+                                    <div class="d-flex align-items-center" style="gap: 7px;">
+                                        <img src="./images/eye.svg" alt="eye icon">
+                                        <span class="lastNews__right-sp darkMode-sp">80934</span>
+                                    </div>
+                                    <span
+                                        class="lastNews__right-sp lastNews__right-spDate darkMode-sp">12.12.2023</span>
+                                </div>
+                            </li>
+                            <li class="border-bottom">
+                                <p class="lastNews__right-text darkMode">Ertaga O‘zbekistonning qaysi hududlarida
+                                    qor
+                                    yog‘ishi ma’lum qilindi</p>
+                                <div
+                                    class=" lastNews__right-view d-flex justify-content-between align-items-center  darkMode-sp">
+                                    <div class="d-flex align-items-center" style="gap: 7px;">
+                                        <img src="./images/eye.svg" alt="eye icon">
+                                        <span class="lastNews__right-sp darkMode-sp">80934</span>
+                                    </div>
+                                    <span
+                                        class="lastNews__right-sp lastNews__right-spDate darkMode-sp">12.12.2023</span>
+                                </div>
+                            </li>
+                            <li class="border-bottom">
+                                <p class="lastNews__right-text darkMode">Ertaga O‘zbekistonning qaysi hududlarida
+                                    qor
+                                    yog‘ishi ma’lum qilindi</p>
+                                <div
+                                    class=" lastNews__right-view d-flex justify-content-between align-items-center  darkMode-sp">
+                                    <div class="d-flex align-items-center" style="gap: 7px;">
+                                        <img src="./images/eye.svg" alt="eye icon">
+                                        <span class="lastNews__right-sp darkMode-sp">80934</span>
+                                    </div>
+                                    <span
+                                        class="lastNews__right-sp lastNews__right-spDate darkMode-sp">12.12.2023</span>
+                                </div>
+                            </li>
+                            <li class="border-bottom">
+                                <p class="lastNews__right-text darkMode">Ertaga O‘zbekistonning qaysi hududlarida
+                                    qor
+                                    yog‘ishi ma’lum qilindi</p>
+                                <div
+                                    class=" lastNews__right-view d-flex justify-content-between align-items-center  darkMode-sp">
+                                    <div class="d-flex align-items-center" style="gap: 7px;">
+                                        <img src="./images/eye.svg" alt="eye icon">
+                                        <span class="lastNews__right-sp darkMode-sp">80934</span>
+                                    </div>
+                                    <span
+                                        class="lastNews__right-sp lastNews__right-spDate darkMode-sp">12.12.2023</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="social">
+            <div class="container">
+                <h4 class="social__name-title darkMode-title">Social questionnaire</h4>
+                <div class="container">
+                    <div class="row social__qs-wrapper d-flex align-items-center justify-content-between">
+                        <div class="col d-none col-sm-4 p-0 d-md-block image-container h-100">
+                            <img src="./images/social.png" alt="social image" class="h-100 w-100">
+                        </div>
+                        <div id="carouselExampleSlidesOnly"
+                            class="carousel slide position-static col col-md-8 p-0 social__qs-inner"
+                            data-mdb-ride="carousel" data-mdb-carousel-init>
+                            <div class=" carousel-inner text-light ">
+                                <div class=" carousel-item social__qs active h-100">
+                                    <p class="social__qs-text">"Bola" degan so'zni birinchi bo'lib qaysi millat
+                                        yaratgani no'malum bo'lsa-da, u dunyoning barcha millatlari tilida bir xil
+                                        mazmunga
+                                        egaligi ma'lumdir.</p>
+                                    <h4 class="social__qs-title">0'ktam Mirzayorov</h4>
+                                </div>
+                                <div class=" carousel-item social__qs h-100">
+                                    <p class="social__qs-text">"Bola" degan so'zni birinchi bo'lib qaysi millat
+                                        yaratgani no'malum bo'lsa-da, u dunyoning barcha millatlari tilida bir xil
+                                        mazmunga egaligi</p>
+                                    <h4 class="social__qs-title">0'ktam Mirzayorov</h4>
+                                </div>
+                                <div class=" carousel-item social__qs h-100">
+                                    <p class="social__qs-text">"Bola" degan so'zni birinchi bo'lib qaysi millat
+                                        yaratgani no'malum bo'lsa-da, u dunyoning barcha millatlari tilida bir xil
+                                        mazmunga.</p>
+                                    <h4 class="social__qs-title">0'ktam Mirzayorov</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Media -->
+        <section class="container" style="margin-bottom: 50px;">
+            <div>
+                <h4 class="media__title fw-bold darkMode-title">Media</h4>
+                <div class="media__card">
+                    <div class="position-relative media__card-img w-100 h-100">
+                        <!-- <img class="img-fluid media__card--img w-100" src="./images/media-img1.png" alt="media-img1"> -->
+                        <p class="media__text position-absolute fw-bold fs-4 text-white">
+                            Mirziyoyeva oilasi bolalar kutubxonasiga bordi.
+                        </p>
+                    </div>
+
+                    <div class="position-relative media__card-img2 w-100 h-100">
+                        <img class="img-fluid w-100" src="./images/media-img2.png" alt="media-img2">
+                        <p class="media__text position-absolute fw-bold fs-4 text-white">
+                            Mirziyoyeva oilasi bolalar kutubxonasiga bordi.
+                        </p>
+                    </div>
+
+
+                    <div class="position-relative media__card-img3 w-100 h-100">
+                        <img class="img-fluid w-100" src="./images/media-img3.png" alt="media-img3">
+                        <p class="media__text position-absolute fw-bold fs-4 text-white">
+                            Mirziyoyeva oilasi bolalar kutubxonasiga bordi.
+                        </p>
+                    </div>
+                    <div class="position-relative media__card-img4 w-100 h-100">
+                        <img class="img-fluid w-100" src="./images/media-img4.png" alt="media-img4">
+                        <p class="media__text position-absolute fw-bold fs-4 text-white">
+                            Mirziyoyeva oilasi bolalar kutubxonasiga bordi.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Achchiqtosh -->
+        <section class="container">
+            <div class="achchiqtosh mt-5 mb-5">
+                <div class="achchiqtosh__card-box10 d-flex flex-column">
+                    <h4 class="achchiqtosh__title fw-bold darkMode-title">Achchiqtosh</h4>
+                    <div class="position-relative">
+                        <img class="achchiqtosh-img1 img-fluid" src="./images/achchiqtosh-img1.png"
+                            alt="achchiqtosh-img1">
+                        <p class="achchiqtosh__posi-text position-absolute fw-bold">
+                            Mirziyoyeva oilasi bolalar kutubxonasiga bordi.
+                        </p>
+                    </div>
+                    <div class="achchiqtosh__card d-flex  mb-4 mt-3" style="gap:17px ;">
+                        <div class="darkMode achchiqtosh__card-box1 achchiqtosh__card-box bg-white">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="./images/achchiqtosh-img2.png" alt="achchiqtosh-img2">
+                                <p class="darkMode achchiqtosh__text position-absolute fw-normal">SALOMATLIK</p>
+                            </div>
+                            <div class="achchiqtosh__info darkMode">
+                                <p class="darkMode-title achchiqtosh__info-text fw-medium">
+                                    Mirziyoyeva oilasi bolalar kutubga bordi.
+                                </p>
+                                <p class="darkMode-title achchiqtosh__info-text1 fw-normal">
+                                    Prezident yordamchisi Saida Mirziyoyeva farzandlari bilan bolalar kutubxonasiga
+                                    keldi.....
+                                </p>
+                                <p class="darkMode-sp achchiqtosh__info-time fw-normal">
+                                    12.12.2023 12:32
+                                </p>
+                            </div>
+                        </div>
+                        <div class="darkMode achchiqtosh__card-box2 achchiqtosh__card-box bg-white position-relative">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="./images/achchiqtosh-img2.png" alt="achchiqtosh-img2">
+                                <p class="darkMode achchiqtosh__text position-absolute fw-normal">SALOMATLIK</p>
+                            </div>
+                            <div class="achchiqtosh__info darkMode">
+                                <p class="darkMode-title achchiqtosh__info-text fw-medium fs-6">
+                                    Mirziyoyeva oilasi bolalar kutubga bordi.
+                                </p>
+                                <p class="darkMode-title achchiqtosh__info-text1 fw-normal">
+                                    Prezident yordamchisi Saida Mirziyoyeva farzandlari bilan bolalar kutubxonasiga
+                                    keldi.....
+                                </p>
+                                <p class="darkMode-sp achchiqtosh__info-time fw-normal">
+                                    12.12.2023 12:32
+                                </p>
+                            </div>
+                        </div>
+                        <div class="darkMode achchiqtosh__card-box3 achchiqtosh__card-box bg-white position-relative">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="./images/achchiqtosh-img2.png" alt="achchiqtosh-img2">
+                                <p class="darkMode achchiqtosh__text position-absolute fw-normal">SALOMATLIK</p>
+                            </div>
+                            <div class="achchiqtosh__info darkMode">
+                                <p class="darkMode-title achchiqtosh__info-text fw-medium fs-6">
+                                    Mirziyoyeva oilasi bolalar kutubga bordi.
+                                </p>
+                                <p class="darkMode-title achchiqtosh__info-text1 fw-normal">
+                                    Prezident yordamchisi Saida Mirziyoyeva farzandlari bilan bolalar kutubxonasiga
+                                    keldi.....
+                                </p>
+                                <p class="darkMode-sp achchiqtosh__info-time fw-normal">
+                                    12.12.2023 12:32
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achchiqtosh__card1 d-flex" style="gap: 17px;">
+                        <div class="darkMode achchiqtosh__card-box4 achchiqtosh__card-box bg-white position-relative">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="./images/achchiqtosh-img2.png" alt="achchiqtosh-img2">
+                                <p class="darkMode achchiqtosh__text position-absolute fw-normal">SALOMATLIK</p>
+                            </div>
+                            <div class="achchiqtosh__info darkMode">
+                                <p class="darkMode-title achchiqtosh__info-text fw-medium fs-6">
+                                    Mirziyoyeva oilasi bolalar kutubga bordi.
+                                </p>
+                                <p class="darkMode-title achchiqtosh__info-text1 fw-normal">
+                                    Prezident yordamchisi Saida Mirziyoyeva farzandlari bilan bolalar kutubxonasiga
+                                    keldi.....
+                                </p>
+                                <p class="darkMode-sp achchiqtosh__info-time fw-normal">
+                                    12.12.2023 12:32
+                                </p>
+                            </div>
+                        </div>
+                        <div class="darkMode achchiqtosh__card-box5 achchiqtosh__card-box bg-white position-relative">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="./images/achchiqtosh-img2.png" alt="achchiqtosh-img2">
+                                <p class="darkMode achchiqtosh__text position-absolute fw-normal">SALOMATLIK</p>
+                            </div>
+                            <div class="achchiqtosh__info darkMode">
+                                <p class="darkMode-title achchiqtosh__info-text fw-medium fs-6">
+                                    Mirziyoyeva oilasi bolalar kutubga bordi.
+                                </p>
+                                <p class="darkMode-title achchiqtosh__info-text1 fw-normal">
+                                    Prezident yordamchisi Saida Mirziyoyeva farzandlari bilan bolalar kutubxonasiga
+                                    keldi.....
+                                </p>
+                                <p class="darkMode-sp achchiqtosh__info-time fw-normal">
+                                    12.12.2023 12:32
+                                </p>
+                            </div>
+                        </div>
+                        <div class="darkMode achchiqtosh__card-box6 achchiqtosh__card-box bg-white position-relative">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="./images/achchiqtosh-img2.png" alt="achchiqtosh-img2">
+                                <p class="darkMode achchiqtosh__text position-absolute fw-normal">SALOMATLIK</p>
+                            </div>
+                            <div class="achchiqtosh__info darkMode">
+                                <p class="darkMode-title achchiqtosh__info-text fw-medium fs-6">
+                                    Mirziyoyeva oilasi bolalar kutubga bordi.
+                                </p>
+                                <p class="darkMode-title achchiqtosh__info-text1 fw-normal">
+                                    Prezident yordamchisi Saida Mirziyoyeva farzandlari bilan bolalar kutubxonasiga
+                                    keldi.....
+                                </p>
+                                <p class="darkMode-sp achchiqtosh__info-time fw-normal">
+                                    12.12.2023 12:32
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside>
+                    <div class="d-flex flex-column  row-gap-3">
+                        <img class="img-fluid achchiqtosh__card-box7" src="./images/reklama-img.png" alt="reklama-img">
+                        <img class="img-fluid achchiqtosh__card-box8" src="./images/reklama-img1.png"
+                            alt="reklama-img1">
+                        <img class="img-fluid achchiqtosh__card-box9" src="./images/reklama-img1.png"
+                            alt="reklama-img1">
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <section class="dunyo-img-card bg-white darkMode">
+            <div class="dunyo-img-box d-flex justify-content-between gap-5 overflow-y-auto darkMode">
+                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                    class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+            </div>
+            <!-- <div>
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide position-static" data-mdb-ride="carousel"
+                        data-mdb-carousel-init>
+                        <div class=" carousel-inner">
+                            <div class=" carousel-item  active h-100">
+                                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img"
+                                    class="lightIcon d-block img-fluid" />
+                                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                                    class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                            </div>
+                            <div class=" carousel-item  active h-100">
+                                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img"
+                                    class="lightIcon d-block img-fluid" />
+                                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                                    class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                            </div>
+                            <div class=" carousel-item  active h-100">
+                                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img"
+                                    class="lightIcon d-block img-fluid" />
+                                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                                    class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                            </div>
+                            <div class=" carousel-item  active h-100">
+                                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img"
+                                    class="lightIcon d-block img-fluid" />
+                                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                                    class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                            </div>
+                            <div class=" carousel-item  active h-100">
+                                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img"
+                                    class="lightIcon d-block img-fluid" />
+                                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                                    class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                            </div>
+                            <div class=" carousel-item  active h-100">
+                                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img"
+                                    class="lightIcon d-block img-fluid" />
+                                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                                    class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="darkMode bg-white" style="margin-top: 30px;">
+        <div class="footer container">
+            <div class="footer__card row">
+                <div class="col">
+                    <a href="#">
+                        <img src="./images/footer-logo.svg" class="lightIcon d-block img-fluid" alt="bolalar olami Logo"
+                            loading="lazy" />
+                        <img src="./images/logo_d.svg" class="darkIcon d-none img-fluid" alt="bolalar olami Logo"
+                            loading="lazy" />
+                    </a>
+                    <p class="footer__text text-body-secondary fw-normal">
+                        Bolalarolami.Uz Internet Nashri 2023 Yilning 7 Aprelda Elektron OAV Sifatida O'zbekiston
+                        Respublikasi Prezidenti Administratsiyasi Huzuridagi Axborot Va Ommaviy Kommunikatsiyalar
+                        Agentligi Tomonidan Davlat Ro‘yxatidan O‘tkazilgan.
+                    </p>
+                    <div class="d-flex" style="margin-top: 50px; gap: 22px;">
+                        <a href="#"> <img src="./images/instagram-logo.svg" alt="instagram-logo"></a>
+                        <a href="#"><img src="./images/telegram-logo.svg" alt="telegram-logo"> </a>
+                        <a href="#"> <img src="./images/facebook-logo.svg" alt="facebook-logo"></a>
+                        <a href="#"> <img src="./images/youtube-logo.svg" alt="youtube-logo"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <ul class="footer__list list-unstyled d-flex flex-column" style="gap: 24px;">
+                        <li><a class="footer__link text-decoration-none fw-bold darkMode-title" href="#">Biz
+                                haqimizda</a>
+                        </li>
+                        <li>
+                            <a class="footer__link1 fw-bold darkMode-title" href="#">Guvohnoma raqami: <span
+                                    class="fw-normal">
+                                    №073429</span></a>
+                        </li>
+                        <li>
+                            <a class="footer__link1 fw-bold darkMode-title" href="#">Muassis: <span
+                                    class="fw-normal">"Dunyo – bolalar
+                                    uchun" <br> masʼuliyati cheklangan jamiyati.</span></a>
+                        </li>
+                        <li>
+                            <a class="footer__link1 fw-bold darkMode-title" href="#">Masʼul muharrir: <span
+                                    class="fw-normal">Sherali
+                                    Soliyev</span>.</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-unstyled d-flex flex-column" style="gap: 24px;">
+                        <li>
+                            <a class="footer__link text-decoration-none fw-bold darkMode-title" href="#">Kontaktlar</a>
+                        </li>
+                        <li class="d-flex align-items-center" style="gap: 6px;">
+                            <img src="./images/mail-icon.svg" alt="mail-icon" class="lightIcon d-block" />
+                            <img src="./images/email-dark.svg" alt="email-dark icon" class="darkIcon d-none" />
+
+
+                            <a class="footer__link1 fw-normal darkMode-title" href="#"> bolalarolamiuz@gmail.com</a>
+                        </li>
+                        <li class="d-flex" style="gap: 14px;">
+                            <img src="./images/phone-icon.svg" alt="phone-icon" class="lightIcon d-block" />
+                            <img src="./images/tell-dark.svg" alt="tell-dark icon" class="darkIcon d-none" />
+                            <a class="footer__link1 fw-normal darkMode-title" href="#">998 (90) 109 24 35</a>
+                        </li>
+                        <li class="d-flex align-items-start" style="gap: 6px;">
+                            <img src="./images/location-icon.svg" alt="location-icon" class="lightIcon d-block " />
+                            <img src="./images/gps-dark.svg" alt="gps-dark icon" class="darkIcon d-none " />
+                            <a class="footer__link1 fw-normal darkMode-title" href="#">634034, Toshkent sh., Naximovna
+                                <br> ko‘chasi,
+                                8/2</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-unstyled d-flex flex-column" style="gap: 24px;">
+                        <li>
+                            <a class="footer__link text-decoration-none fw-bold darkMode-title" href="#">Hamkorlik
+                                uchun</a>
+                        </li>
+                        <li class="d-flex" style="gap: 14px;">
+                            <img src="./images/phone-icon.svg" alt="phone-icon" class="lightIcon d-block " />
+                            <img src="./images/tell-dark.svg" alt="tell-dark icon" class="darkIcon d-none " />
+                            <a class="footer__link1 fw-normal darkMode-title" href="#">998 (90) 109 24 35</a>
+                        </li>
+                        <li class="d-flex" style="gap: 13px;">
+                            <img src="./images/telegram-icon.svg" alt="telegram-icon" class="lightIcon d-block " />
+                            <img src="./images/telegram-dark.svg" alt="telegram-dark icon" class="darkIcon d-none " />
+                            <a class="footer__link1 fw-normal darkMode-title" href="#">Telegram</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <p class="footer__co-text text-center fw-normal darkMode-sp">
+                    © 2022-2023 Bolalar Olami. Barcha huquqlar himoyalangan.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- carusel -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- MDB -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
