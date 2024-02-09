@@ -159,6 +159,7 @@
             img {
                 width: 32px;
                 height: 32px;
+                border-radius: 50%;
             }
 
             button {
@@ -196,13 +197,14 @@
 
         &-list {
             margin-top: 36px;
+            margin-bottom: 34px;
             display: flex;
             flex-direction: column;
             gap: 36px;
         }
 
         &-item {
-            height: 256px;
+            max-width: 343px;
             padding: 16px;
             border-radius: 8px;
             background: #F6F6F6;
@@ -297,8 +299,13 @@
     }
 }
 
-@media only screen and (min-width: 765px) {
+@media only screen and (min-width: 510px) {
+    .main__wrapper {
+        gap: 37px;
+    }
+
     .single {
+
         max-width: 480px;
 
         &__title {
@@ -500,14 +507,12 @@
             }
 
             &-list {
-                margin-top: 15px;
-                margin-left: 33px;
+                margin: 15px 0 13.35px 33px;
                 gap: 11px;
             }
 
             &-item {
                 max-width: 331px;
-                height: 118px;
                 padding: 10px;
                 border-radius: 7.948px;
 
@@ -554,6 +559,10 @@
 }
 
 @media only screen and (min-width: 1200px) {
+    .main__wrapper {
+        gap: 58px;
+    }
+
     .single {
         max-width: 866px;
 
@@ -741,97 +750,78 @@
 
 
         &__message {
-            margin-top: 15.21px;
+            margin-top: 28px;
 
             &-top {
-                display: flex;
-                align-items: flex-start;
-                flex-direction: row;
-                gap: 4px;
-                padding: 9px;
-                border-radius: 7px;
-                border: 0.555px solid #E9EBF0;
-                background: #F8F8F8;
+                gap: 7px;
+                padding: 16px;
+                border-radius: 12px;
+                border: 1px solid #E9EBF0;
 
                 img {
-                    width: 22.188px;
-                    height: 22.188px;
+                    width: 40px;
+                    height: 40px;
                 }
 
                 button {
-                    padding: 5.547px 11.094px !important;
-                    border-radius: 8px !important;
-                    border-radius: 2.219px !important;
-                    border: 0.555px solid #E9EBF0;
-                    background: #FFF !important;
-                    font-family: "BBC Reith Sans", sans-serif;
-                    font-size: 10px;
-                    font-weight: 500;
-                    line-height: 14px;
+                    padding: 10px 20px !important;
+                    border-radius: 4px !important;
+                    border: 1px solid #E9EBF0;
+                    font-size: 16px;
+                    line-height: 24px;
                 }
 
                 textarea {
-                    width: 100%;
-                    height: 53.25px;
-                    border-radius: 4.438px;
-                    border: 0.555px solid #E9EBF0;
-                    background: #FFF;
-                    outline: none;
-                    padding: 8.88px 13.31px;
+                    height: 96px;
+                    border-radius: 8px;
+                    border: 1px solid #E9EBF0;
+                    padding: 16px 24px;
 
                     &::placeholder {
-                        font-family: "BBC Reith Sans", sans-serif;
-                        font-size: 10px;
-                        line-height: 14px;
+                        font-size: 16px;
+                        line-height: 24px;
                     }
                 }
             }
 
             &-list {
-                margin-top: 15px;
-                margin-left: 33px;
-                gap: 11px;
+                margin: 16px 0 69px 72px;
+                gap: 20px;
             }
 
             &-item {
-                max-width: 331px;
-                height: 118px;
-                padding: 10px;
-                border-radius: 7.948px;
+                max-width: 568px;
+                padding: 20px;
+                border-radius: 14px;
 
                 .item {
                     &__left {
-                        gap: 9px;
+                        gap: 16px;
 
                         img {
-                            width: 18px;
-                            height: 18px;
+                            width: 32px;
+                            height: 32px;
                         }
 
                         h4 {
-                            color: #242424;
-                            font-size: 9.083px;
-                            font-weight: 500;
+                            font-size: 16px;
                         }
                     }
 
                     &__right {
-                        gap: 17px;
+                        gap: 30px;
                         margin-right: 23px;
 
                         img {
-                            width: 6.543px;
-                            height: 7.948px;
+                            width: 14px;
+                            height: 13.95px;
                         }
                     }
 
                     &__text {
-                        margin-top: 10px;
-                        color: #777;
-                        font-feature-settings: 'clig' off, 'liga' off;
-                        font-size: 11px;
-                        font-weight: 400;
-                        line-height: normal;
+                        margin-top: 15px;
+                        font-size: 14px;
+                        line-height: 20px;
                     }
                 }
             }
