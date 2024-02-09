@@ -2512,6 +2512,10 @@ img {
   font-size: 12px;
   margin-bottom: 0;
 }
+.single__message {
+  background: #F5F6FA;
+  padding: 10px !important;
+}
 .single__message-top {
   border-radius: 8px;
   border: 1px solid #E9EBF0;
@@ -2574,6 +2578,7 @@ img {
   padding: 16px;
   border-radius: 8px;
   background: #F6F6F6;
+  border: 1px solid #E9EBF0;
 }
 .single__message-item .item__inner {
   display: flex;
@@ -3071,10 +3076,6 @@ img {
     line-height: 20px;
   }
 }
-.aside {
-  background: #F6F6F6;
-  padding: 10px 16px;
-}
 .aside__wrapper {
   display: flex !important;
   flex-direction: column;
@@ -3084,7 +3085,114 @@ img {
   width: 100%;
   height: 216px;
 }
+.aside__left-spLink {
+  left: 5.797px;
+  bottom: 10px;
+  background: #FFF;
+  padding: 5.63px 13.511px;
+  color: #121212;
+  font-size: 11.594px;
+  text-transform: uppercase;
+}
+.aside .card-body {
+  padding: 12px 5.8px;
+  gap: 18px;
+}
+.aside .card-title {
+  color: #121212;
+  font-size: 19.324px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.aside .card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.aside__left-sp {
+  overflow: hidden;
+  color: #A0A0A0;
+  text-overflow: ellipsis;
+  font-size: 15.459px;
+}
 
+@media only screen and (min-width: 768px) {
+  .aside__wrapper {
+    gap: 10px;
+  }
+  .aside__img-add {
+    height: 86px;
+  }
+  .aside__left-spLink {
+    left: 2.877px;
+    bottom: 7px;
+    padding: 2.794px 6.705px;
+    color: #242424;
+    font-family: "BBC Reith Sans", sans-serif;
+    font-size: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .aside__left-inner img {
+    height: 97.8px;
+  }
+  .aside .card-body {
+    padding: 5.7px 2.8px;
+    gap: 8.94px;
+  }
+  .aside .card-title {
+    color: #242424;
+    font-size: 10px;
+  }
+  .aside .card-text {
+    color: #242424;
+    font-size: 8px;
+    margin-bottom: 0;
+  }
+  .aside__left-sp {
+    font-size: 7px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .aside__wrapper {
+    gap: 20px;
+  }
+  .aside__title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 32px;
+  }
+  .aside__img-add {
+    height: 178.082px;
+  }
+  .aside__left-spLink {
+    left: 6px;
+    bottom: 7px;
+    padding: 5.827px 13.984px;
+    color: #121212;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 12px;
+  }
+  .aside__left-inner img {
+    height: 204px;
+  }
+  .aside .card-body {
+    padding: 12px 6px;
+    gap: 18.65px;
+  }
+  .aside .card-title {
+    color: #121212;
+    font-size: 20px;
+  }
+  .aside .card-text {
+    color: #121212;
+    font-size: 16px;
+  }
+  .aside__left-sp {
+    font-size: 16px;
+  }
+}
 .loopScroler {
   margin: 0 0 30px 0;
   transition: all 0.3s ease;

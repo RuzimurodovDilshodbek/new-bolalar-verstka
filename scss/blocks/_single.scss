@@ -1,4 +1,6 @@
 .single {
+ 
+
     &__title {
         font-feature-settings: 'clig' off, 'liga' off;
         font-size: 18px;
@@ -143,8 +145,8 @@
     // }
 
     &__message {
-        // background: #F5F6FA;
-        // margin: -14px !important;
+        background: #F5F6FA;
+        padding: 10px !important;
 
         &-top {
             border-radius: 8px;
@@ -208,6 +210,7 @@
             padding: 16px;
             border-radius: 8px;
             background: #F6F6F6;
+            border: 1px solid #E9EBF0;
 
             .item {
                 &__inner {
