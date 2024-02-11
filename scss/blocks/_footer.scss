@@ -47,6 +47,9 @@
     .footer {
         padding: 31px 0 0 31px !important;
 
+        .footer__list {
+            margin-left: 0;
+        }
 
         .footer__card {
             display: grid !important;
