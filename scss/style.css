@@ -512,6 +512,10 @@ img {
   max-width: 240px;
   margin-top: 37px;
   margin-bottom: 0;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .hero__link-btn {
   font-family: "BBC Reith Sans", sans-serif;
@@ -718,19 +722,25 @@ img {
   height: 202px;
 }
 .news__card-title {
+  position: absolute;
   font-family: "BBC Reith Sans", sans-serif;
   color: #FFF;
   font-size: 17px;
   font-weight: 700;
-  margin-top: 136px;
+  bottom: 15px;
   max-width: 301px;
   margin-bottom: 0;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .news .card-img-overlay {
   background-image: url(../images/rectangle.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 18px 12px;
+  height: 100%;
 }
 
 @media only screen and (min-width: 376px) {
@@ -849,6 +859,10 @@ img {
   font-weight: 400;
   margin-bottom: 5.75px;
   max-width: 95%;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .lastNews__right-view {
   margin-bottom: 5px;
@@ -869,10 +883,12 @@ img {
   font-size: 9.351px;
 }
 .lastNews__left {
-  order: 2;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+}
+.lastNews__left-wrap {
+  order: 2;
 }
 .lastNews__left .card-img-top {
   height: 197.104px;
@@ -886,6 +902,10 @@ img {
   font-size: 19px;
   font-weight: 500;
   margin-bottom: 0;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .lastNews__left .card-text {
   overflow: hidden;
@@ -893,6 +913,10 @@ img {
   text-overflow: ellipsis;
   font-size: 15.459px;
   margin-bottom: 0;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .lastNews__left-sp {
   overflow: hidden;
@@ -905,7 +929,7 @@ img {
   padding: 5.63px 13.511px;
   background: #FFF;
   left: 5.797px;
-  top: 159.423px;
+  bottom: 8.7px;
   color: #121212;
   font-size: 11.594px;
   text-transform: uppercase;
@@ -959,7 +983,7 @@ img {
   .lastNews__left-spLink {
     font-family: "BBC Reith Sans", sans-serif;
     left: 3.668px;
-    top: 100.885px;
+    bottom: 5.5px;
     padding: 3.563px 8.55px;
     font-size: 7.337px;
   }
@@ -1025,7 +1049,7 @@ img {
   }
   .lastNews__left-spLink {
     left: 6.455px;
-    top: 177.519px;
+    bottom: 9.88px;
     padding: 6.269px 15.045px;
     font-size: 12.91px;
   }
@@ -2490,6 +2514,7 @@ img {
 .single__text {
   font-feature-settings: "clig" off, "liga" off;
   font-size: 13px;
+  text-align: justify;
 }
 .single__text-wrapper {
   max-width: 273px;
@@ -3244,12 +3269,16 @@ img {
 .footer .footer__card {
   padding: 40px 0 22px 0;
 }
+.footer .footer__list {
+  margin-left: 50px;
+}
 .footer .footer__text {
   color: #979797;
   font-size: 13px;
   line-height: normal;
   text-transform: capitalize;
   margin-top: 27px;
+  text-align: justify;
 }
 .footer .footer__link {
   color: #242424;
