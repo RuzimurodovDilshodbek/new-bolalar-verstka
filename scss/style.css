@@ -3085,6 +3085,1541 @@ img {
     line-height: normal;
   }
 }
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F8F8F8 !important;
+}
+
+#section {
+  background-color: #F8F8F8;
+}
+
+.books-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 18px !important;
+  margin-top: 95px;
+}
+.books-card__text {
+  color: #3E3232;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  padding: 15px 0 10px 10px !important;
+}
+.books-card__text:nth-child(3) {
+  color: rgba(62, 50, 50, 0.5);
+}
+
+.books-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  -moz-column-gap: 49px;
+       column-gap: 49px;
+  padding-bottom: 251px !important;
+}
+.books-wrapper__part {
+  border-radius: 12px;
+  background: #FFF;
+  width: 325px;
+  max-height: 400px;
+}
+.books-wrapper__part-title {
+  color: #242424;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-bottom: 1px solid #DEDEDE;
+  padding: 24px 0 16px 24px;
+}
+.books-wrapper__part-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 0 0 22px 24px;
+}
+.books-wrapper__part-item {
+  color: #242424;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.books-wrapper__total-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.books-wrapper__total-box--title {
+  color: #242424;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.books-wrapper__total-box--insearch {
+  border-radius: 7px;
+  border: 1px solid #DEDEDE;
+  background: #FFF;
+  padding: 9px 20px 8px 10px;
+  outline: none;
+  color: #242424;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.books-wrapper__total-card {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 44px;
+  margin-top: 25px;
+}
+.books-wrapper__total-card--box {
+  border-radius: 4px;
+  background: #FFF;
+}
+.books-wrapper__total-card--box-img {
+  padding: 14px 24px 16px 24px;
+}
+.books-wrapper__total-card--box-natext {
+  overflow: hidden;
+  color: #242424;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 11px 5px 5px 6px;
+  margin-bottom: 0px;
+  border-top: 1px solid #E9EBF0;
+  max-width: 204px !important;
+}
+.books-wrapper__total-card--box-vatext {
+  color: #242424;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 8px 5px 5px 6px;
+}
+.books-wrapper__total-card--box-btn {
+  border-radius: 6px;
+  background: rgba(247, 147, 30, 0.1);
+  color: #F7931E;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px 0;
+  outline: none;
+  border: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  #section {
+    background-color: #F8F8F8;
+  }
+  .books-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 18px !important;
+    margin-top: 95px;
+  }
+  .books-card__text {
+    color: #3E3232;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 15px 0 10px 10px !important;
+  }
+  .books-card__text:nth-child(3) {
+    color: rgba(62, 50, 50, 0.5);
+  }
+  .books-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+    padding-bottom: 40px !important;
+  }
+  .books-wrapper__part {
+    border-radius: 12px;
+    background: #F8F8F8;
+    width: 190px;
+    max-height: 400px;
+  }
+  .books-wrapper__part-title {
+    color: #242424;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-bottom: 1px solid #DEDEDE;
+    padding: 11.5px 0 16px 24px;
+  }
+  .books-wrapper__part-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 25px 0 34px 24px;
+  }
+  .books-wrapper__part-item {
+    color: #242424;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+  .books-wrapper__total-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .books-wrapper__total-box--title {
+    color: #242424;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .books-wrapper__total-box--insearch {
+    border-radius: 7px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+    padding: 9px 20px 8px 10px;
+    outline: none;
+    color: #242424;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .books-wrapper__total-card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    row-gap: 44px;
+    margin-top: 24px;
+  }
+  .books-wrapper__total-card--box {
+    border-radius: 3.125px;
+    background: #FFF;
+  }
+  .books-wrapper__total-card--box-img {
+    padding: 10px 18.37px 12.5px 18.37px;
+  }
+  .books-wrapper__total-card--box-natext {
+    overflow: hidden;
+    color: #242424;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 8.59px 5px 5px 4.69px;
+    margin-bottom: 0px;
+    border-top: 1px solid #E9EBF0;
+    max-width: 204px !important;
+  }
+  .books-wrapper__total-card--box-vatext {
+    color: #242424;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5px 5px 5px 4.69px;
+  }
+  .books-wrapper__total-card--box-btn {
+    border-radius: 6px;
+    background: rgba(247, 147, 30, 0.1);
+    color: #F7931E;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 31.16px;
+  }
+  .books-wrapper__total-card--box-btn img {
+    width: 15.625px;
+    height: 15.625px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #section {
+    background-color: #F8F8F8;
+  }
+  .books-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 18px !important;
+    margin-top: 95px;
+  }
+  .books-card__text {
+    color: #3E3232;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 15px 0 10px 10px !important;
+  }
+  .books-card__text:nth-child(3) {
+    color: rgba(62, 50, 50, 0.5);
+  }
+  .books-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+    padding-bottom: 40px !important;
+  }
+  .books-wrapper__part {
+    border-radius: 12px;
+    background: #F8F8F8;
+    width: 190px;
+    max-height: 400px;
+  }
+  .books-wrapper__part-title {
+    color: #242424;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-bottom: 1px solid #DEDEDE;
+    padding: 11.5px 0 16px 24px;
+  }
+  .books-wrapper__part-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 25px 0 34px 24px;
+  }
+  .books-wrapper__part-item {
+    color: #242424;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+  .books-wrapper__total-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .books-wrapper__total-box--title {
+    color: #242424;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .books-wrapper__total-box--insearch {
+    border-radius: 7px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+    padding: 9px 20px 8px 10px;
+    outline: none;
+    color: #242424;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .books-wrapper__total-card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    row-gap: 44px;
+    margin-top: 24px;
+  }
+  .books-wrapper__total-card--box {
+    border-radius: 3.125px;
+    background: #FFF;
+  }
+  .books-wrapper__total-card--box-img {
+    padding: 10px 18.37px 12.5px 18.37px;
+  }
+  .books-wrapper__total-card--box-natext {
+    overflow: hidden;
+    color: #242424;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 8.59px 5px 5px 4.69px;
+    margin-bottom: 0px;
+    border-top: 1px solid #E9EBF0;
+    max-width: 204px !important;
+  }
+  .books-wrapper__total-card--box-vatext {
+    color: #242424;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5px 5px 5px 4.69px;
+  }
+  .books-wrapper__total-card--box-btn {
+    border-radius: 6px;
+    background: rgba(247, 147, 30, 0.1);
+    color: #F7931E;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 31.16px;
+  }
+  .books-wrapper__total-card--box-btn img {
+    width: 15.625px;
+    height: 15.625px;
+  }
+}
+@media only screen and (max-width: 786px) {
+  #section {
+    background-color: #F8F8F8;
+  }
+  .books-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 18px !important;
+    margin-top: 95px;
+  }
+  .books-card__text {
+    color: #3E3232;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 15px 0 10px 10px !important;
+  }
+  .books-card__text:nth-child(3) {
+    color: rgba(62, 50, 50, 0.5);
+  }
+  .books-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+    padding-bottom: 40px !important;
+  }
+  .books-wrapper__part {
+    border-radius: 12px;
+    background: #F8F8F8;
+    width: 190px;
+    max-height: 400px;
+  }
+  .books-wrapper__part-title {
+    color: #242424;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-bottom: 1px solid #DEDEDE;
+    padding: 11.5px 0 16px 24px;
+  }
+  .books-wrapper__part-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 25px 0 34px 24px;
+  }
+  .books-wrapper__part-item {
+    color: #242424;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+  .books-wrapper__total-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .books-wrapper__total-box--title {
+    color: #242424;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .books-wrapper__total-box--insearch {
+    border-radius: 7px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+    padding: 9px 20px 8px 10px;
+    outline: none;
+    color: #242424;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .books-wrapper__total-card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    row-gap: 44px;
+    margin-top: 24px;
+  }
+  .books-wrapper__total-card--box {
+    border-radius: 3.125px;
+    background: #FFF;
+  }
+  .books-wrapper__total-card--box-img {
+    padding: 10px 18.37px 12.5px 18.37px;
+  }
+  .books-wrapper__total-card--box-natext {
+    overflow: hidden;
+    color: #242424;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 8.59px 5px 5px 4.69px;
+    margin-bottom: 0px;
+    border-top: 1px solid #E9EBF0;
+    max-width: 204px !important;
+  }
+  .books-wrapper__total-card--box-vatext {
+    color: #242424;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5px 5px 5px 4.69px;
+  }
+  .books-wrapper__total-card--box-btn {
+    border-radius: 6px;
+    background: rgba(247, 147, 30, 0.1);
+    color: #F7931E;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 31.16px;
+  }
+  .books-wrapper__total-card--box-btn img {
+    width: 15.625px;
+    height: 15.625px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #section {
+    background-color: #F8F8F8;
+    margin-top: 95px;
+  }
+  .books-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 18px !important;
+  }
+  .books-card__text {
+    color: #3E3232;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 15px 0 10px 10px !important;
+  }
+  .books-card__text:nth-child(3) {
+    color: rgba(62, 50, 50, 0.5);
+  }
+  .books-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    -moz-column-gap: 49px;
+         column-gap: 49px;
+    padding-bottom: 40px !important;
+  }
+  .books-wrapper__part {
+    border-radius: 12px;
+    background-color: #F8F8F8;
+    width: 325px;
+    max-height: 400px;
+  }
+  .books-wrapper__part-title {
+    color: #242424;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-bottom: 1px solid #DEDEDE;
+    padding: 20px 0 16px 24px;
+  }
+  .books-wrapper__part-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 25px 0 22px 24px;
+  }
+  .books-wrapper__part-item {
+    color: #242424;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .books-wrapper__total-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .books-wrapper__total-box--title {
+    color: #242424;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .books-wrapper__total-box--insearch {
+    border-radius: 7px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+    padding: 12px 20px 13px 10px;
+    outline: none;
+    color: #D6D2D2;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .books-wrapper__total-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    row-gap: 44px;
+    margin-top: 25px;
+  }
+  .books-wrapper__total-card--box {
+    border-radius: 4px;
+    background: #FFF;
+  }
+  .books-wrapper__total-card--box-img {
+    padding: 10.94px 18.37px 12px 18.75px;
+  }
+  .books-wrapper__total-card--box-natext {
+    overflow: hidden;
+    color: #242424;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 8.9px 5px 5px 6px;
+    margin-bottom: 0px;
+    border-top: 1px solid #E9EBF0;
+    max-width: 204px !important;
+  }
+  .books-wrapper__total-card--box-vatext {
+    color: #242424;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8px 5px 5px 6px;
+  }
+  .books-wrapper__total-card--box-btn {
+    border-radius: 5px;
+    background: rgba(247, 147, 30, 0.1);
+    color: #F7931E;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 0 !important;
+  }
+}
+@media only screen and (max-width: 376px) {
+  #section {
+    background-color: #F8F8F8;
+    margin-top: 95px;
+  }
+  .books-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 18px !important;
+  }
+  .books-card__text {
+    color: #3E3232;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 15px 0 10px 10px !important;
+  }
+  .books-card__text:nth-child(3) {
+    color: rgba(62, 50, 50, 0.5);
+  }
+  .books-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    -moz-column-gap: 49px;
+         column-gap: 49px;
+    padding-bottom: 40px !important;
+  }
+  .books-wrapper__part {
+    border-radius: 12px;
+    background-color: #F8F8F8;
+    width: 325px;
+    max-height: 400px;
+  }
+  .books-wrapper__part-title {
+    color: #242424;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-bottom: 1px solid #DEDEDE;
+    padding: 20px 0 16px 24px;
+  }
+  .books-wrapper__part-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 25px 0 22px 24px;
+  }
+  .books-wrapper__part-item {
+    color: #242424;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .books-wrapper__total-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .books-wrapper__total-box--title {
+    color: #242424;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .books-wrapper__total-box--insearch {
+    border-radius: 7px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+    padding: 12px 20px 13px 10px;
+    outline: none;
+    color: #D6D2D2;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .books-wrapper__total-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    row-gap: 44px;
+    margin-top: 25px;
+  }
+  .books-wrapper__total-card--box {
+    border-radius: 4px;
+    background: #FFF;
+  }
+  .books-wrapper__total-card--box-img {
+    padding: 10.94px 18.37px 12px 18.75px;
+  }
+  .books-wrapper__total-card--box-natext {
+    overflow: hidden;
+    color: #242424;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 8.9px 5px 5px 6px;
+    margin-bottom: 0px;
+    border-top: 1px solid #E9EBF0;
+    max-width: 204px !important;
+  }
+  .books-wrapper__total-card--box-vatext {
+    color: #242424;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8px 5px 5px 6px;
+  }
+  .books-wrapper__total-card--box-btn {
+    border-radius: 5px;
+    background: rgba(247, 147, 30, 0.1);
+    color: #F7931E;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 0 !important;
+  }
+}
+.talim-title {
+  margin-top: 136px;
+  margin-bottom: 15px;
+  color: #242424;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.talim-box {
+  display: grid;
+  grid-template-columns: auto 607px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.talim-box__left-box {
+  background-image: url(../../images/talimImages/Rectangle-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 3px;
+}
+.talim-box__left-title {
+  color: #FFF;
+  font-size: 24.004px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0 120px 0 17px;
+  bottom: 10px;
+  margin-bottom: 0;
+}
+.talim-box__right {
+  display: flex;
+  flex-direction: column;
+  background: #F3EBDF;
+}
+.talim-box__right-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 38px;
+}
+.talim-box__right-title {
+  color: #967851;
+  font-family: "IBM Plex Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 38px 34px 0 34px;
+}
+.talim-box__right-text {
+  color: #967851;
+  font-family: "IBM Plex Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 10px 15px 34px;
+}
+.talim-box__right-img {
+  width: 108px;
+  height: 108px;
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 8px;
+  padding-right: 15px;
+}
+
+.talim-cardimg {
+  margin-top: 40px;
+  display: flex;
+  gap: 21px;
+  margin-bottom: 21px;
+}
+.talim-cardimg__left {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 19px 15px;
+}
+.talim-cardimg__left-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  background-color: #FFF;
+}
+.talim-cardimg__left-wrapper-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15.96px;
+}
+.talim-cardimg__left-wrapper-dec {
+  color: #242424;
+  font-family: "IBM Plex Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 4.989px 11.974px;
+  background-color: #FFF;
+  bottom: 12px;
+  left: 11px;
+  margin-bottom: 0;
+}
+.talim-cardimg__left-wrapper-title {
+  color: #242424;
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  padding: 2px 3px 0 6px;
+}
+.talim-cardimg__left-wrapper-text {
+  overflow: hidden;
+  color: #242424;
+  text-overflow: ellipsis;
+  font-family: "IBM Plex Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 2px 3px 0 6px;
+}
+.talim-cardimg__left-wrapper-time {
+  overflow: hidden;
+  color: #A0A0A0;
+  text-overflow: ellipsis;
+  font-family: "IBM Plex Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 2px 3px 15.9px 6px;
+}
+.talim-cardimg__aside {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .talim-title {
+    margin-top: 120px;
+    font-size: 20px;
+  }
+  .talim-box {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 27px;
+  }
+  .talim-box__left-box {
+    background-image: url(../../images/talimImages/Rectangle-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 3px;
+  }
+  .talim-box__left-title {
+    font-size: 28px;
+    padding: 0 101px 0 10px;
+  }
+  .talim-box__right {
+    display: flex;
+    flex-direction: column;
+    background: #F3EBDF;
+  }
+  .talim-box__right-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45.57px;
+  }
+  .talim-box__right-title {
+    font-size: 28.784px;
+    padding: 45.58px 76px 0 44.38px;
+  }
+  .talim-box__right-text {
+    font-size: 21.588px;
+    padding: 5px 10px 15px 44px;
+  }
+  .talim-box__right-img {
+    width: 129.529px;
+    height: 129.529px;
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    padding-right: 17px;
+  }
+  .talim-cardimg {
+    margin-top: 34px;
+    display: flex;
+    gap: 18px;
+    margin-bottom: 40px;
+  }
+  .talim-cardimg__left {
+    gap: 20px 10px;
+  }
+  .talim-cardimg__left-wrapper {
+    row-gap: 5px;
+  }
+  .talim-cardimg__left-wrapper-box {
+    row-gap: 9.08px;
+  }
+  .talim-cardimg__left-wrapper-dec {
+    font-size: 6.825px;
+    padding: 4.989px 11.974px;
+  }
+  .talim-cardimg__left-wrapper-title {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 2px 3px 0 3px;
+  }
+  .talim-cardimg__left-wrapper-text {
+    font-size: 8px;
+    padding: 2px 3px 0 3px;
+  }
+  .talim-cardimg__left-wrapper-time {
+    font-size: 7.963px;
+    padding: 2px 3px 9.08px 3px;
+  }
+  .talim-cardimg__aside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9.1px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .talim-title {
+    margin-top: 120px;
+    font-size: 20px;
+  }
+  .talim-box {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 27px;
+  }
+  .talim-box__left-box {
+    background-image: url(../../images/talimImages/Rectangle-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 3px;
+  }
+  .talim-box__left-title {
+    font-size: 28px;
+    padding: 0 101px 0 10px;
+  }
+  .talim-box__right {
+    display: flex;
+    flex-direction: column;
+    background: #F3EBDF;
+  }
+  .talim-box__right-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45.57px;
+  }
+  .talim-box__right-title {
+    font-size: 28.784px;
+    padding: 45.58px 76px 0 44.38px;
+  }
+  .talim-box__right-text {
+    font-size: 21.588px;
+    padding: 5px 10px 15px 44px;
+  }
+  .talim-box__right-img {
+    width: 129.529px;
+    height: 129.529px;
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    padding-right: 17px;
+  }
+  .talim-cardimg {
+    margin-top: 34px;
+    display: flex;
+    gap: 18px;
+    margin-bottom: 40px;
+  }
+  .talim-cardimg__left {
+    gap: 20px 10px;
+  }
+  .talim-cardimg__left-wrapper {
+    row-gap: 5px;
+  }
+  .talim-cardimg__left-wrapper-box {
+    row-gap: 9.08px;
+  }
+  .talim-cardimg__left-wrapper-dec {
+    font-size: 6.825px;
+    padding: 4.989px 11.974px;
+  }
+  .talim-cardimg__left-wrapper-title {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 2px 3px 0 3px;
+  }
+  .talim-cardimg__left-wrapper-text {
+    font-size: 8px;
+    padding: 2px 3px 0 3px;
+  }
+  .talim-cardimg__left-wrapper-time {
+    font-size: 7.963px;
+    padding: 2px 3px 9.08px 3px;
+  }
+  .talim-cardimg__aside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9.1px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .talim-title {
+    margin-top: 120px;
+    font-size: 20px;
+  }
+  .talim-box {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 27px;
+  }
+  .talim-box__left-box {
+    background-image: url(../../images/talimImages/Rectangle-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 3px;
+  }
+  .talim-box__left-title {
+    font-size: 28px;
+    padding: 0 101px 0 10px;
+  }
+  .talim-box__right {
+    display: flex;
+    flex-direction: column;
+    background: #F3EBDF;
+  }
+  .talim-box__right-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45.57px;
+  }
+  .talim-box__right-title {
+    font-size: 28.784px;
+    padding: 45.58px 76px 0 44.38px;
+  }
+  .talim-box__right-text {
+    font-size: 21.588px;
+    padding: 5px 10px 15px 44px;
+  }
+  .talim-box__right-img {
+    width: 129.529px;
+    height: 129.529px;
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    padding-right: 17px;
+  }
+  .talim-cardimg {
+    margin-top: 34px;
+    display: flex;
+    gap: 18px;
+    margin-bottom: 40px;
+  }
+  .talim-cardimg__left {
+    gap: 20px 10px;
+  }
+  .talim-cardimg__left-wrapper {
+    row-gap: 5px;
+  }
+  .talim-cardimg__left-wrapper-box {
+    row-gap: 9.08px;
+  }
+  .talim-cardimg__left-wrapper-dec {
+    font-size: 6.825px;
+    padding: 4.989px 11.974px;
+  }
+  .talim-cardimg__left-wrapper-title {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 2px 3px 0 3px;
+  }
+  .talim-cardimg__left-wrapper-text {
+    font-size: 8px;
+    padding: 2px 3px 0 3px;
+  }
+  .talim-cardimg__left-wrapper-time {
+    font-size: 7.963px;
+    padding: 2px 3px 9.08px 3px;
+  }
+  .talim-cardimg__aside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9.1px;
+  }
+  .talim-cardimg__aside img {
+    max-width: 173px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .talim-title {
+    display: none;
+  }
+  .talim-box {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 12.72px;
+    margin-top: 116px;
+  }
+  .talim-box__left-box {
+    background-image: url(../../images/talimImages/Rectangle-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 3px;
+  }
+  .talim-box__left-title {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0 2px 0 17px;
+    max-width: 293.24px;
+    bottom: 10px;
+    margin-bottom: 0;
+  }
+  .talim-box__right {
+    display: flex;
+    flex-direction: column;
+    background: #F3EBDF;
+  }
+  .talim-box__right-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 21.47px;
+  }
+  .talim-box__right-title {
+    color: #967851;
+    font-family: "IBM Plex Sans";
+    font-size: 13.562px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 21.47px 20.91px 0 20.91px;
+  }
+  .talim-box__right-text {
+    color: #967851;
+    font-family: "IBM Plex Sans";
+    font-size: 10.171px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 10px 15px 20.91px;
+  }
+  .talim-box__right-img {
+    width: 61.028px;
+    height: 61.028px;
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 4.72px;
+    padding-right: 8px;
+  }
+  .talim-cardimg {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 21px;
+  }
+  .talim-cardimg__left {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 20px;
+  }
+  .talim-cardimg__left-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 11px;
+    background-color: #FFF;
+  }
+  .talim-cardimg__left-wrapper-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+  }
+  .talim-cardimg__left-wrapper img {
+    width: 546px;
+  }
+  .talim-cardimg__left-wrapper-dec {
+    color: #121212;
+    font-family: "IBM Plex Sans";
+    font-size: 11.594px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 4.989px 11.974px;
+    background-color: #FFF;
+    bottom: 12px;
+    left: 11px;
+    margin-bottom: 0;
+  }
+  .talim-cardimg__left-wrapper-title {
+    color: #242424;
+    font-family: "IBM Plex Sans";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    padding: 2px 3px 0 6px;
+  }
+  .talim-cardimg__left-wrapper-text {
+    overflow: hidden;
+    color: #242424;
+    text-overflow: ellipsis;
+    font-family: "IBM Plex Sans";
+    font-size: 15.459px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 2px 3px 0 6px;
+  }
+  .talim-cardimg__left-wrapper-time {
+    overflow: hidden;
+    color: #A0A0A0;
+    text-overflow: ellipsis;
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 2px 3px 15.9px 6px;
+  }
+  .talim-cardimg__aside {
+    display: none;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .talim-title {
+    display: none;
+  }
+  .talim-box {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 12.72px;
+    margin-top: 116px;
+  }
+  .talim-box__left-box {
+    background-image: url(../../images/talimImages/Rectangle-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 3px;
+  }
+  .talim-box__left-title {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0 2px 0 17px;
+    max-width: 293.24px;
+    bottom: 10px;
+    margin-bottom: 0;
+  }
+  .talim-box__right {
+    display: flex;
+    flex-direction: column;
+    background: #F3EBDF;
+  }
+  .talim-box__right-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 21.47px;
+  }
+  .talim-box__right-title {
+    color: #967851;
+    font-family: "IBM Plex Sans";
+    font-size: 13.562px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 21.47px 20.91px 0 20.91px;
+  }
+  .talim-box__right-text {
+    color: #967851;
+    font-family: "IBM Plex Sans";
+    font-size: 10.171px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 10px 15px 20.91px;
+  }
+  .talim-box__right-img {
+    width: 61.028px;
+    height: 61.028px;
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 4.72px;
+    padding-right: 8px;
+  }
+  .talim-cardimg {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 21px;
+  }
+  .talim-cardimg__left {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 20px;
+  }
+  .talim-cardimg__left-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 11px;
+    background-color: #FFF;
+  }
+  .talim-cardimg__left-wrapper-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+  }
+  .talim-cardimg__left-wrapper img {
+    width: 343px;
+  }
+  .talim-cardimg__left-wrapper-dec {
+    color: #121212;
+    font-family: "IBM Plex Sans";
+    font-size: 11.594px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 4.989px 11.974px;
+    background-color: #FFF;
+    bottom: 12px;
+    left: 11px;
+    margin-bottom: 0;
+  }
+  .talim-cardimg__left-wrapper-title {
+    color: #242424;
+    font-family: "IBM Plex Sans";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    padding: 2px 3px 0 6px;
+    max-width: 331px;
+  }
+  .talim-cardimg__left-wrapper-text {
+    overflow: hidden;
+    color: #242424;
+    text-overflow: ellipsis;
+    font-family: "IBM Plex Sans";
+    font-size: 15.459px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 2px 3px 0 6px;
+    max-width: 331px;
+  }
+  .talim-cardimg__left-wrapper-time {
+    overflow: hidden;
+    color: #A0A0A0;
+    text-overflow: ellipsis;
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 2px 3px 15.9px 6px;
+    max-width: 331px;
+  }
+  .talim-cardimg__aside {
+    display: none;
+  }
+}
 .aside {
   background: #F6F6F6;
   padding: 10px 16px;

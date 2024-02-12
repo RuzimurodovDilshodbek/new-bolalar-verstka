@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-mdb-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
-    <!-- fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <!-- css -->
-    <link rel="stylesheet" href="scss/style.css">
-
+     <!-- Font Awesome -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+     <!-- MDB -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
+     <!-- fonts  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+         rel="stylesheet">
+     <!-- carusel -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     <!-- css -->
+     <link rel="stylesheet" href="scss/style.css">
 </head>
-
-<body class="bg-white darkMode-body">
+<body class="darkMode-body">
     <header class="header fixed-top darkMode">
         <div class="header__wrapper ">
             <!-- header top navbar -->
@@ -217,248 +217,271 @@
         </div>
     </header>
     <main>
-        <!-- OUR GALLERY -->
-        <section class="container darkMode-body">
-            <div style="margin-top:135px;">
-                <h2 class="mediacate__text darkMode-title">
-                    BIZNING GALEREYA
-                </h2>
-                <div class="mediacate__card">
-                    <div class="mediacate__card-box position-relative">
-                        <img src="./mediacategoryImages/mediaimg1.png" class="img-fluid mediacate__card-img"
-                            alt="GALEREYA img">
-                        <div class="mediacate__card-posi position-absolute w-100">
-                            <div>
-                                <h3 class="mediacate__card-posi--title fw-medium text-white">
-                                    Ijtimoiy so'rovnoma
-                                </h3>
-                                <h3 class="mediacate__card-posi--title fw-normal">
-                                    5 Videos
-                                </h3>
+        <section id="section" class="darkMode-body">
+           <div class="container">
+            <div class="books-card darkMode-body">
+                <p class="books-card__text darkMode-title">Asosiy</p>
+                <p class="books-card__text darkMode-title">Yangiliklar</p>
+                <p class="books-card__text darkMode-title">Maktab o'quvchilari ilk bor Prezident Administratsiyasiga bordi</p>
+ 
+             </div>
+           </div>
+        </section>
+        <section>
+            <div class="container books-wrapper darkMode-body">
+                <div class="books-wrapper__part darkMode">
+                    <h3 class="books-wrapper__part-title darkMode-title">
+                        Bo'limlar
+                    </h3>
+                    <ul class="books-wrapper__part-list">
+                        <li class="books-wrapper__part-item darkMode-title">
+                            Bolalar adabiyoti
+                        </li>
+                        <li class="books-wrapper__part-item darkMode-title">
+                            Badiiy adabiyotlar
+                        </li>
+                        <li class="books-wrapper__part-item darkMode-title">
+                            Bolalar adabiyoti
+                        </li>
+                        <li class="books-wrapper__part-item darkMode-title">
+                            IТ sohasiga oid kitoblar
+                        </li>
+                        <li class="books-wrapper__part-item darkMode-title">
+                            Diniy adabiyotlar
+                        </li>
+                        <li class="books-wrapper__part-item darkMode-title">
+                            IТ sohasiga oid kitoblar
+                        </li>
+                        <li class="books-wrapper__part-item darkMode-title">
+                            Bolalar adabiyoti
+                        </li>
+                    </ul>
+                </div>
+                <div class="books-wrapper__total darkMode-body">
+                    <div class="books-wrapper__total-box">
+                        <h3 class="books-wrapper__total-box--title darkMode-title">
+                            Kitoblar
+                        </h3>
+                        <input class="books-wrapper__total-box--insearch darkMode-btn" type="search" placeholder="Qidirish">
+                    </div>
+                    <div class="books-wrapper__total-card">
+                        <div class="books-wrapper__total-card--box darkMode">
+                            <img src="./images/booksImages/books-img.png" class="img-fluid books-wrapper__total-card--box-img" alt="books-img">
+                            <p class="books-wrapper__total-card--box-natext darkMode-title">
+                                Barbara Oukli: Raqamlar <br> uchun yaralgan 
+                            </p>
+                            <p class="books-wrapper__total-card--box-vatext darkMode-title">
+                                Erkin Vohidovning
+                            </p>
+                            <button class="books-wrapper__total-card--box-btn w-100">Yuklab olish
+                                <img src="./images/booksImages/download.svg" alt="dowlond-icon">
+                            </button>
+                        </div>
+                        <div class="books-wrapper__total-card--box darkMode">
+                            <img src="./images/booksImages/books-img1.png" class="img-fluid books-wrapper__total-card--box-img" alt="books-img">
+                            <p class="books-wrapper__total-card--box-natext darkMode-title">
+                                Barbara Oukli: Raqamlar <br> uchun yaralgan 
+                            </p>
+                            <p class="books-wrapper__total-card--box-vatext darkMode-title">
+                                Erkin Vohidovning
+                            </p>
+                            <button class="books-wrapper__total-card--box-btn w-100">Yuklab olish
+                                <img src="./images/booksImages/download.svg" class="img-fluid" alt="dowlond-icon">
+                            </button>
+                        </div>
+                        <div class="books-wrapper__total-card--box darkMode">
+                            <img src="./images/booksImages/books-img.png" class="img-fluid books-wrapper__total-card--box-img" alt="books-img">
+                            <p class="books-wrapper__total-card--box-natext darkMode-title">
+                                Barbara Oukli: Raqamlar <br> uchun yaralgan 
+                            </p>
+                            <p class="books-wrapper__total-card--box-vatext darkMode-title">
+                                Erkin Vohidovning
+                            </p>
+                            <button class="books-wrapper__total-card--box-btn w-100">Yuklab olish
+                                <img src="./images/booksImages/download.svg" alt="dowlond-icon">
+                            </button>
+                        </div>
+                        <div class="books-wrapper__total-card--box darkMode">
+                            <img src="./images/booksImages/books-img.png" class="img-fluid books-wrapper__total-card--box-img" alt="books-img">
+                            <p class="books-wrapper__total-card--box-natext darkMode-title">
+                                Barbara Oukli: Raqamlar <br> uchun yaralgan 
+                            </p>
+                            <p class="books-wrapper__total-card--box-vatext darkMode-title">
+                                Erkin Vohidovning
+                            </p>
+                            <button class="books-wrapper__total-card--box-btn w-100">Yuklab olish
+                                <img src="./images/booksImages/download.svg" alt="dowlond-icon">
+                            </button>
+                        </div>
+                        <div class="books-wrapper__total-card--box darkMode">
+                            <img src="./images/booksImages/books-img.png" class="img-fluid books-wrapper__total-card--box-img" alt="books-img">
+                            <p class="books-wrapper__total-card--box-natext darkMode-title">
+                                Barbara Oukli: Raqamlar <br> uchun yaralgan 
+                            </p>
+                            <p class="books-wrapper__total-card--box-vatext darkMode-title">
+                                Erkin Vohidovning
+                            </p>
+                            <button class="books-wrapper__total-card--box-btn w-100">Yuklab olish
+                                <img src="./images/booksImages/download.svg" alt="dowlond-icon">
+                            </button>
+                        </div>
+                        <div class="books-wrapper__total-card--box darkMode">
+                            <img src="./images/booksImages/books-img.png" class="img-fluid books-wrapper__total-card--box-img" alt="books-img">
+                            <p class="books-wrapper__total-card--box-natext darkMode-title">
+                                Barbara Oukli: Raqamlar <br> uchun yaralgan 
+                            </p>
+                            <p class="books-wrapper__total-card--box-vatext darkMode-title">
+                                Erkin Vohidovning
+                            </p>
+                            <button class="books-wrapper__total-card--box-btn w-100">Yuklab olish
+                                <img src="./images/booksImages/download.svg" alt="dowlond-icon">
+                            </button>
+                        </div>
+                        <div class="books-wrapper__total-card--box darkMode">
+                            <img src="./images/booksImages/books-img.png" class="img-fluid books-wrapper__total-card--box-img" alt="books-img">
+                            <p class="books-wrapper__total-card--box-natext darkMode-title">
+                                Barbara Oukli: Raqamlar <br> uchun yaralgan 
+                            </p>
+                            <p class="books-wrapper__total-card--box-vatext darkMode-title">
+                                Erkin Vohidovning
+                            </p>
+                            <button class="books-wrapper__total-card--box-btn w-100">Yuklab olish
+                                <img src="./images/booksImages/download.svg" alt="dowlond-icon">
+                            </button>
+                        </div>
+                        <div class="books-wrapper__total-card--box darkMode">
+                            <img src="./images/booksImages/books-img.png" class="img-fluid books-wrapper__total-card--box-img" alt="books-img">
+                            <p class="books-wrapper__total-card--box-natext darkMode-title">
+                                Barbara Oukli: Raqamlar <br> uchun yaralgan 
+                            </p>
+                            <p class="books-wrapper__total-card--box-vatext darkMode-title">
+                                Erkin Vohidovning
+                            </p>
+                            <button class="books-wrapper__total-card--box-btn w-100">Yuklab olish
+                                <img src="./images/booksImages/download.svg" alt="dowlond-icon">
+                            </button>
+                        </div>
+                        <div class="books-wrapper__total-card--box darkMode">
+                            <img src="./images/booksImages/books-img.png" class="img-fluid books-wrapper__total-card--box-img" alt="books-img">
+                            <p class="books-wrapper__total-card--box-natext darkMode-title">
+                                Barbara Oukli: Raqamlar <br> uchun yaralgan 
+                            </p>
+                            <p class="books-wrapper__total-card--box-vatext darkMode-title">
+                                Erkin Vohidovning
+                            </p>
+                            <button class="books-wrapper__total-card--box-btn w-100">Yuklab olish
+                                <img src="./images/booksImages/download.svg" alt="dowlond-icon">
+                            </button>
+                        </div>
+                        <div class="books-wrapper__total-card--box darkMode">
+                            <img src="./images/booksImages/books-img.png" class="img-fluid books-wrapper__total-card--box-img" alt="books-img">
+                            <p class="books-wrapper__total-card--box-natext darkMode-title">
+                                Barbara Oukli: Raqamlar <br> uchun yaralgan 
+                            </p>
+                            <p class="books-wrapper__total-card--box-vatext darkMode-title">
+                                Erkin Vohidovning
+                            </p>
+                            <button class="books-wrapper__total-card--box-btn w-100">Yuklab olish
+                                <img src="./images/booksImages/download.svg" alt="dowlond-icon">
+                            </button>
+                        </div>
+                        <div class="books-wrapper__total-card--box darkMode">
+                            <img src="./images/booksImages/books-img.png" class="img-fluid books-wrapper__total-card--box-img" alt="books-img">
+                            <p class="books-wrapper__total-card--box-natext darkMode-title">
+                                Barbara Oukli: Raqamlar <br> uchun yaralgan 
+                            </p>
+                            <p class="books-wrapper__total-card--box-vatext darkMode-title">
+                                Erkin Vohidovning
+                            </p>
+                            <button class="books-wrapper__total-card--box-btn w-100">Yuklab olish
+                                <img src="./images/booksImages/download.svg" alt="dowlond-icon">
+                            </button>
+                        </div>
+                        <div class="books-wrapper__total-card--box darkMode">
+                            <img src="./images/booksImages/books-img.png" class="img-fluid books-wrapper__total-card--box-img" alt="books-img">
+                            <p class="books-wrapper__total-card--box-natext darkMode-title">
+                                Barbara Oukli: Raqamlar <br> uchun yaralgan 
+                            </p>
+                            <p class="books-wrapper__total-card--box-vatext darkMode-title">
+                                Erkin Vohidovning
+                            </p>
+                            <button class="books-wrapper__total-card--box-btn w-100">Yuklab olish
+                                <img src="./images/booksImages/download.svg" alt="dowlond-icon">
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+            <section class="dunyo-img-card bg-white darkMode">
+                <div class="dunyo-img-box d-flex justify-content-between gap-5 overflow-y-auto darkMode">
+                    <img src="./images/booksImages/mFaktor-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                    <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                        class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                    <img src="./images/booksImages/maktabgacha-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                    <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                        class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                    <img src="./images/booksImages/image-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                    <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                        class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                    <img src="./images/booksImages/world-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                    <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                        class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                    <img src="./images/booksImages/idb-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                    <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                        class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                    <img src="./images/booksImages/najot-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
+                    <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                        class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                </div>
+                <!-- <div>
+                    <div class="row d-flex align-items-center justify-content-between">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide position-static" data-mdb-ride="carousel"
+                            data-mdb-carousel-init>
+                            <div class=" carousel-inner">
+                                <div class=" carousel-item  active h-100">
+                                    <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img"
+                                        class="lightIcon d-block img-fluid" />
+                                    <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                                        class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                                </div>
+                                <div class=" carousel-item  active h-100">
+                                    <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img"
+                                        class="lightIcon d-block img-fluid" />
+                                    <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                                        class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                                </div>
+                                <div class=" carousel-item  active h-100">
+                                    <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img"
+                                        class="lightIcon d-block img-fluid" />
+                                    <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                                        class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                                </div>
+                                <div class=" carousel-item  active h-100">
+                                    <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img"
+                                        class="lightIcon d-block img-fluid" />
+                                    <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                                        class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                                </div>
+                                <div class=" carousel-item  active h-100">
+                                    <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img"
+                                        class="lightIcon d-block img-fluid" />
+                                    <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                                        class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                                </div>
+                                <div class=" carousel-item  active h-100">
+                                    <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img"
+                                        class="lightIcon d-block img-fluid" />
+                                    <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
+                                        class="darkIcon d-none darkMode img-fluid" style="width: 204px;" />
+                                </div>
                             </div>
-                            <img src="./mediacategoryImages/play-icon.svg" class="img-fluid" alt="play-icon">
                         </div>
                     </div>
-                    <div class="mediacate__card-box1">
-                        <div class="position-relative">
-                            <img src="./mediacategoryImages/mediaimg2.png" class="img-fluid rounded-0 mediacate__card-box1--img "
-                                alt="GALEREYA img">
-                                <h2 class="mediacate__card-bottom--title position-absolute">
-                                    Barcha pleylistlar
-                                </h2>
-                                <div class="mediacate__card-bottom position-absolute w-100">
-                                    <div>
-                                        <p class="mediacate__card-bottom--text">
-                                            Ijtimoiy so'rovnoma
-                                        </p>
-                                        <p class="mediacate__card-bottom--text1 fw-normal">
-                                            32 Videos 
-                                        </p>
-                                    </div>
-                                    <img src="./mediacategoryImages/play-icon.svg" class="img-fluid" style="width: 40px; height: 40px;" alt="play-icon">
-                                </div>
-
-                        </div>
-                        <div class="position-relative">
-                            <img src="./mediacategoryImages/mediaimg3.png" class="img-fluid rounded-0 mediacate__card-box1--img"
-                                alt="GALEREYA img">
-                                <h2  class="mediacate__card-bottom--title position-absolute">
-                                    Barcha fotosuratlar
-                                </h2>
-                                <div class="mediacate__card-bottom position-absolute w-100">
-                                    <div>
-                                        <p class="mediacate__card-bottom--text">
-                                            Hamma rasmlar
-                                        </p>
-                                        <p class="mediacate__card-bottom--text1 fw-normal">
-                                            65 rasmlar  
-                                        </p>
-                                    </div>
-                                    <div class="mediacate__card-bottom--imgdiv">
-                                    <img src="./mediacategoryImages/gallery-icon.svg" class="img-fluid mediacate__card-bottom--img" alt="play-icon">
-                                    </div>
-                                </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="mediacate__galle">
-                    <div class="position-relative">
-                        <img src="./mediacategoryImages/imggalleriya.png" class="img-fluid" alt="gallery-img">
-                        <img src="./mediacategoryImages/group-icon.svg" class="position-absolute mediacate__galle--icon" alt="icon">
-                    </div>
-                    <div class="position-relative">
-                        <img src="./mediacategoryImages/imggalleriya1.png" class="img-fluid" alt="gallery-img">
-                        <img src="./mediacategoryImages/group-icon.svg" class="position-absolute mediacate__galle--icon" alt="icon">
-                    </div>
-                    <div class="position-relative">
-                        <img src="./mediacategoryImages/imggalleriya2.png" class="img-fluid" alt="gallery-img">
-                        <img src="./mediacategoryImages/group-icon.svg" class="position-absolute mediacate__galle--icon" alt="icon">
-                    </div>
-                    <div class="position-relative">
-                        <img src="./mediacategoryImages/imggalleriya4.png" class="img-fluid" alt="gallery-img">
-                        <img src="./mediacategoryImages/group-icon.svg" class="position-absolute mediacate__galle--icon" alt="icon">
-                    </div>
-                    <div class="position-relative">
-                        <img src="./mediacategoryImages/imggalleriya6.png" class="img-fluid" alt="gallery-img">
-                        <img src="./mediacategoryImages/group-icon.svg" class="position-absolute mediacate__galle--icon" alt="icon">
-                    </div>
-                    <div class="position-relative">
-                        <img src="./mediacategoryImages/imggalleriya5.png" class="img-fluid" alt="gallery-img">
-                        <img src="./mediacategoryImages/group-icon.svg" class="position-absolute mediacate__galle--icon" alt="icon">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- media all -->
-        <section class="container">
-            <h2 class="mediacate__all-text darkMode-title">
-                Hammasi
-            </h2>
-            <div class="mediacate__all">
-                <div class="position-relative mediacate__all-card w-100 image-container ">
-                    <img src="./mediacategoryImages/all-img.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
-                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
-                        <div>
-                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
-                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
-                        </div>
-                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
-                    </div>
-                </div>
-                <div class="position-relative mediacate__all-card w-100 image-container ">
-                    <img src="./mediacategoryImages/all-img1.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
-                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
-                        <div>
-                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
-                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
-                        </div>
-                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
-                    </div>
-                </div>
-                <div class="position-relative mediacate__all-card w-100 image-container ">
-                    <img src="./mediacategoryImages/all-img1.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
-                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
-                        <div>
-                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
-                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
-                        </div>
-                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
-                    </div>
-                </div>
-                <div class="position-relative mediacate__all-card w-100 image-container ">
-                    <img src="./mediacategoryImages/all-img1.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
-                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
-                        <div>
-                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
-                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
-                        </div>
-                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
-                    </div>
-                </div>
-                <div class="position-relative mediacate__all-card w-100 image-container ">
-                    <img src="./mediacategoryImages/all-img2.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
-                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
-                        <div>
-                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
-                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
-                        </div>
-                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
-                    </div>
-                </div>
-                <div class="position-relative mediacate__all-card w-100 image-container ">
-                    <img src="./mediacategoryImages/all-img3.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
-                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
-                        <div>
-                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
-                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
-                        </div>
-                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container">
-            <h2 class="mediacate__all-text darkMode-title">
-                Hammasi
-            </h2>
-            <div class="mediacate__all">
-                <div class="position-relative mediacate__all-card w-100 image-container ">
-                    <img src="./mediacategoryImages/all-img4.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
-                    <div class="position-absolute mediacate__all-box w-100 h-100 card-img-overlay">
-                        <div>
-                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
-                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
-                        </div>
-                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
-                    </div>
-                </div>
-                <div class="position-relative mediacate__all-card w-100 image-container ">
-                    <img src="./mediacategoryImages/all-img5.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
-                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
-                        <div>
-                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
-                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
-                        </div>
-                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
-                    </div>
-                </div>
-                <div class="position-relative mediacate__all-card w-100 image-container ">
-                    <img src="./mediacategoryImages/all-img6.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
-                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
-                        <div>
-                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
-                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
-                        </div>
-                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
-                    </div>
-                </div>
-                <div class="position-relative mediacate__all-card w-100 image-container ">
-                    <img src="./mediacategoryImages/all-img7.png" class="img-fluid h-100 rounded-0 card-img" alt="img">
-                    <div class="position-absolute mediacate__all-box w-100 card-img-overlay">
-                        <div>
-                            <p class="mediacate__all-box-text fw-medium text-white">Ijtimoiy so'rovnoma</p>
-                            <p class="mediacate__all-box-text fw-normal">5 Videos </p>
-                        </div>
-                        <img src="./mediacategoryImages/play-icon.svg" class=" img-fluid" style="width: 40px; height: 40px;" alt="icon">
-                    </div>
-                </div>
-               
-            </div>
-        </section>
-
-        <section class="dunyo-img-card bg-white darkMode" > 
-            <div class="dunyo-img-box d-flex justify-content-between gap-5 overflow-y-auto darkMode">
-                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
-                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
-                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
-                ;" />
-                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
-                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
-                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
-                ;" />
-                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
-                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
-                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
-                ;" />
-                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
-                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
-                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
-                ;" />
-                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
-                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
-                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
-                ;" />
-                <img src="./images/dunyoBola-img.svg" alt="dunyoBola-img" class="lightIcon d-block img-fluid" />
-                <img src="./images/dunyoBola-img-dark1.jpg" alt="dunyoBola-img"
-                    class="darkIcon d-none darkMode img-fluid" style="width: 204px
-                ;" />
-                 
-        </div>
-    </section>
+                </div> -->
+            </section>
     </main>
-
     <!-- footer -->
     <footer class="darkMode bg-white" style="margin-top: 30px;">
         <div class="container">
@@ -565,5 +588,4 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
     <script src="main.js"></script>
 </body>
-
 </html>
