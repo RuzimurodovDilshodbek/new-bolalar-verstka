@@ -65,3 +65,17 @@ let swiper = new Swiper(".mySwiper", {
     }
 });
 
+
+function toggleClass() {
+    var divs = document.getElementsByClassName("myDiv");
+    for (var i = 0; i < divs.length; i++) {
+        var div = divs[i];
+        if (div.classList.contains("newClass")) {
+            div.classList.remove("newClass");
+            div.classList.add("classOld");
+        } else {
+            div.classList.remove("classOld");
+            div.classList.add("newClass");
+        }
+    }
+}
